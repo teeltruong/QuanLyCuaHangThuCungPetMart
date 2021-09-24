@@ -29,19 +29,28 @@ namespace PetMart
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMainMenu));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.btnQLNV = new FontAwesome.Sharp.IconButton();
             this.btnQLKH = new FontAwesome.Sharp.IconButton();
             this.btnQLDH = new FontAwesome.Sharp.IconButton();
             this.btnQLSP = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.iconCurrentChildForm = new FontAwesome.Sharp.IconPictureBox();
             this.lbTitleChildForm = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.labelTiltle = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).BeginInit();
+            this.panelDesktop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -56,7 +65,11 @@ namespace PetMart
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelMenu.Name = "panelMenu";
+<<<<<<< HEAD
             this.panelMenu.Size = new System.Drawing.Size(294, 844);
+=======
+            this.panelMenu.Size = new System.Drawing.Size(261, 761);
+>>>>>>> 7108dbfbddd37aacd90557bc9762c2a653cf8ec3
             this.panelMenu.TabIndex = 0;
             // 
             // btnQLNV
@@ -153,12 +166,36 @@ namespace PetMart
             // 
             // panelLogo
             // 
+            this.panelLogo.Controls.Add(this.label1);
+            this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(294, 212);
             this.panelLogo.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Sigmar One", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
+            this.label1.Location = new System.Drawing.Point(28, 116);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(180, 46);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "PETMART";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(72, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(91, 86);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panelTitleBar
             // 
@@ -169,7 +206,11 @@ namespace PetMart
             this.panelTitleBar.Location = new System.Drawing.Point(294, 0);
             this.panelTitleBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelTitleBar.Name = "panelTitleBar";
+<<<<<<< HEAD
             this.panelTitleBar.Size = new System.Drawing.Size(1152, 92);
+=======
+            this.panelTitleBar.Size = new System.Drawing.Size(1047, 74);
+>>>>>>> 7108dbfbddd37aacd90557bc9762c2a653cf8ec3
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -201,19 +242,52 @@ namespace PetMart
             // 
             // panelDesktop
             // 
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
+            this.panelDesktop.Controls.Add(this.labelTiltle);
+            this.panelDesktop.Controls.Add(this.pictureBox2);
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.Location = new System.Drawing.Point(294, 92);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelDesktop.Name = "panelDesktop";
+<<<<<<< HEAD
             this.panelDesktop.Size = new System.Drawing.Size(1152, 752);
+=======
+            this.panelDesktop.Size = new System.Drawing.Size(1047, 687);
+>>>>>>> 7108dbfbddd37aacd90557bc9762c2a653cf8ec3
             this.panelDesktop.TabIndex = 2;
+            // 
+            // labelTiltle
+            // 
+            this.labelTiltle.AutoSize = true;
+            this.labelTiltle.Font = new System.Drawing.Font("UTM Loko", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTiltle.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.labelTiltle.Location = new System.Drawing.Point(87, 57);
+            this.labelTiltle.Name = "labelTiltle";
+            this.labelTiltle.Size = new System.Drawing.Size(878, 64);
+            this.labelTiltle.TabIndex = 2;
+            this.labelTiltle.Text = "HỆ THỐNG CỬA HÀNG THÚ CƯNG PETMART";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox2.Location = new System.Drawing.Point(36, 61);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(976, 754);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // FormMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1446, 844);
+=======
+            this.ClientSize = new System.Drawing.Size(1308, 761);
+>>>>>>> 7108dbfbddd37aacd90557bc9762c2a653cf8ec3
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
@@ -221,9 +295,15 @@ namespace PetMart
             this.Name = "FormMainMenu";
             this.Text = "FormMainMenu";
             this.panelMenu.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            this.panelLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
             this.panelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconCurrentChildForm)).EndInit();
+            this.panelDesktop.ResumeLayout(false);
+            this.panelDesktop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -240,6 +320,10 @@ namespace PetMart
         private FontAwesome.Sharp.IconPictureBox iconCurrentChildForm;
         private System.Windows.Forms.Label lbTitleChildForm;
         private System.Windows.Forms.Panel panelDesktop;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label labelTiltle;
     }
 }
 

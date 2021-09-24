@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="BUS\BUS_KhachHang.cs" />
     <Compile Include="BUS\BUS_NhanVien.cs" />
     <Compile Include="BUS\BUS_SanPham.cs" />
@@ -73,6 +74,19 @@
     <Compile Include="DAO\DAO_SanPham.cs" />
     <Compile Include="Employee.cs">
       <DependentUpon>PetShopManagementEntity.tt</DependentUpon>
+=======
+    <Compile Include="FormDangKyAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangKyAdmin.Designer.cs">
+      <DependentUpon>FormDangKyAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDangNhapAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDangNhapAdmin.Designer.cs">
+      <DependentUpon>FormDangNhapAdmin.cs</DependentUpon>
+>>>>>>> 7108dbfbddd37aacd90557bc9762c2a653cf8ec3
     </Compile>
     <Compile Include="FormMainMenu.cs">
       <SubType>Form</SubType>
@@ -130,9 +144,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="sysdiagram.cs">
       <DependentUpon>PetShopManagementEntity.tt</DependentUpon>
     </Compile>
+=======
+    <EmbeddedResource Include="FormDangKyAdmin.resx">
+      <DependentUpon>FormDangKyAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDangNhapAdmin.resx">
+      <DependentUpon>FormDangNhapAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> 7108dbfbddd37aacd90557bc9762c2a653cf8ec3
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +203,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
@@ -193,6 +217,15 @@
       <DependentUpon>PetShopManagementEntity.edmx</DependentUpon>
       <LastGenOutput>PetShopManagementEntity.cs</LastGenOutput>
     </Content>
+=======
+    <None Include="Resources\illust22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_DOGKINGDOM%28official%29_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illust6.png" />
+>>>>>>> 7108dbfbddd37aacd90557bc9762c2a653cf8ec3
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
