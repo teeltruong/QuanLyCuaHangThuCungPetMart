@@ -69,52 +69,52 @@ namespace PetMart
             // hoTenNhanVienLabel
             // 
             this.hoTenNhanVienLabel.AutoSize = true;
-            this.hoTenNhanVienLabel.Location = new System.Drawing.Point(25, 59);
+            this.hoTenNhanVienLabel.Location = new System.Drawing.Point(28, 74);
             this.hoTenNhanVienLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hoTenNhanVienLabel.Name = "hoTenNhanVienLabel";
-            this.hoTenNhanVienLabel.Size = new System.Drawing.Size(111, 20);
+            this.hoTenNhanVienLabel.Size = new System.Drawing.Size(118, 20);
             this.hoTenNhanVienLabel.TabIndex = 2;
             this.hoTenNhanVienLabel.Text = "Mã đơn hàng:";
             // 
             // ngaySinhLabel
             // 
             this.ngaySinhLabel.AutoSize = true;
-            this.ngaySinhLabel.Location = new System.Drawing.Point(25, 92);
+            this.ngaySinhLabel.Location = new System.Drawing.Point(28, 115);
             this.ngaySinhLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ngaySinhLabel.Name = "ngaySinhLabel";
-            this.ngaySinhLabel.Size = new System.Drawing.Size(123, 20);
+            this.ngaySinhLabel.Size = new System.Drawing.Size(130, 20);
             this.ngaySinhLabel.TabIndex = 4;
             this.ngaySinhLabel.Text = "Ngày đặt hàng:";
             // 
             // diaChiLabel
             // 
             this.diaChiLabel.AutoSize = true;
-            this.diaChiLabel.Location = new System.Drawing.Point(484, 90);
+            this.diaChiLabel.Location = new System.Drawing.Point(544, 112);
             this.diaChiLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.diaChiLabel.Name = "diaChiLabel";
-            this.diaChiLabel.Size = new System.Drawing.Size(88, 20);
+            this.diaChiLabel.Size = new System.Drawing.Size(93, 20);
             this.diaChiLabel.TabIndex = 6;
             this.diaChiLabel.Text = "Nhân viên:";
             // 
             // dienThoaiLabel
             // 
             this.dienThoaiLabel.AutoSize = true;
-            this.dienThoaiLabel.Location = new System.Drawing.Point(483, 53);
+            this.dienThoaiLabel.Location = new System.Drawing.Point(543, 66);
             this.dienThoaiLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dienThoaiLabel.Name = "dienThoaiLabel";
-            this.dienThoaiLabel.Size = new System.Drawing.Size(103, 20);
+            this.dienThoaiLabel.Size = new System.Drawing.Size(109, 20);
             this.dienThoaiLabel.TabIndex = 8;
             this.dienThoaiLabel.Text = "Khách hàng:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FloralWhite;
-            this.label1.Location = new System.Drawing.Point(351, 43);
+            this.label1.Location = new System.Drawing.Point(395, 54);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(324, 39);
+            this.label1.Size = new System.Drawing.Size(366, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ ĐƠN HÀNG";
             // 
@@ -128,13 +128,13 @@ namespace PetMart
             this.groupBox1.Controls.Add(this.ngaySinhLabel);
             this.groupBox1.Controls.Add(this.diaChiLabel);
             this.groupBox1.Controls.Add(this.dienThoaiLabel);
-            this.groupBox1.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(56, 104);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Location = new System.Drawing.Point(63, 130);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(915, 146);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(1029, 182);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin đơn hàng";
@@ -143,36 +143,38 @@ namespace PetMart
             // 
             this.cbNhanVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbNhanVien.FormattingEnabled = true;
-            this.cbNhanVien.Location = new System.Drawing.Point(603, 92);
+            this.cbNhanVien.Location = new System.Drawing.Point(678, 115);
+            this.cbNhanVien.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbNhanVien.Name = "cbNhanVien";
-            this.cbNhanVien.Size = new System.Drawing.Size(264, 26);
+            this.cbNhanVien.Size = new System.Drawing.Size(296, 28);
             this.cbNhanVien.TabIndex = 15;
             // 
             // cbKH
             // 
             this.cbKH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbKH.FormattingEnabled = true;
-            this.cbKH.Location = new System.Drawing.Point(603, 51);
+            this.cbKH.Location = new System.Drawing.Point(678, 64);
+            this.cbKH.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cbKH.Name = "cbKH";
-            this.cbKH.Size = new System.Drawing.Size(264, 26);
+            this.cbKH.Size = new System.Drawing.Size(296, 28);
             this.cbKH.TabIndex = 14;
             // 
             // dtpNgayDH
             // 
-            this.dtpNgayDH.Font = new System.Drawing.Font("Montserrat Medium", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dtpNgayDH.Location = new System.Drawing.Point(165, 92);
-            this.dtpNgayDH.Margin = new System.Windows.Forms.Padding(4);
+            this.dtpNgayDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.dtpNgayDH.Location = new System.Drawing.Point(186, 115);
+            this.dtpNgayDH.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpNgayDH.Name = "dtpNgayDH";
-            this.dtpNgayDH.Size = new System.Drawing.Size(265, 23);
+            this.dtpNgayDH.Size = new System.Drawing.Size(298, 25);
             this.dtpNgayDH.TabIndex = 13;
             // 
             // txtMaDH
             // 
             this.txtMaDH.Enabled = false;
-            this.txtMaDH.Location = new System.Drawing.Point(165, 55);
-            this.txtMaDH.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaDH.Location = new System.Drawing.Point(186, 69);
+            this.txtMaDH.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMaDH.Name = "txtMaDH";
-            this.txtMaDH.Size = new System.Drawing.Size(265, 23);
+            this.txtMaDH.Size = new System.Drawing.Size(298, 25);
             this.txtMaDH.TabIndex = 3;
             // 
             // dtpNgayDonHang
@@ -180,7 +182,7 @@ namespace PetMart
             this.dtpNgayDonHang.Location = new System.Drawing.Point(186, 109);
             this.dtpNgayDonHang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dtpNgayDonHang.Name = "dtpNgayDonHang";
-            this.dtpNgayDonHang.Size = new System.Drawing.Size(298, 22);
+            this.dtpNgayDonHang.Size = new System.Drawing.Size(298, 26);
             this.dtpNgayDonHang.TabIndex = 5;
             // 
             // bindingNavigatorMoveFirstItem
@@ -208,7 +210,6 @@ namespace PetMart
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -269,23 +270,23 @@ namespace PetMart
             this.groupBox2.Controls.Add(this.btSua);
             this.groupBox2.Controls.Add(this.btXoa);
             this.groupBox2.Controls.Add(this.btThem);
-            this.groupBox2.Location = new System.Drawing.Point(525, 274);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Location = new System.Drawing.Point(591, 342);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(445, 103);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Size = new System.Drawing.Size(501, 129);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             // 
             // btThoat
             // 
             this.btThoat.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btThoat.Font = new System.Drawing.Font("Montserrat Semi Bold", 7.799999F, System.Drawing.FontStyle.Bold);
+            this.btThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.799999F, System.Drawing.FontStyle.Bold);
             this.btThoat.ForeColor = System.Drawing.Color.White;
-            this.btThoat.Location = new System.Drawing.Point(334, 23);
-            this.btThoat.Margin = new System.Windows.Forms.Padding(4);
+            this.btThoat.Location = new System.Drawing.Point(376, 29);
+            this.btThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btThoat.Name = "btThoat";
-            this.btThoat.Size = new System.Drawing.Size(100, 56);
+            this.btThoat.Size = new System.Drawing.Size(112, 70);
             this.btThoat.TabIndex = 3;
             this.btThoat.Text = "THOÁT";
             this.btThoat.UseVisualStyleBackColor = false;
@@ -293,12 +294,12 @@ namespace PetMart
             // btSua
             // 
             this.btSua.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btSua.Font = new System.Drawing.Font("Montserrat Semi Bold", 7.799999F, System.Drawing.FontStyle.Bold);
+            this.btSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.799999F, System.Drawing.FontStyle.Bold);
             this.btSua.ForeColor = System.Drawing.Color.White;
-            this.btSua.Location = new System.Drawing.Point(229, 23);
-            this.btSua.Margin = new System.Windows.Forms.Padding(4);
+            this.btSua.Location = new System.Drawing.Point(258, 29);
+            this.btSua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(100, 56);
+            this.btSua.Size = new System.Drawing.Size(112, 70);
             this.btSua.TabIndex = 2;
             this.btSua.Text = "SỬA";
             this.btSua.UseVisualStyleBackColor = false;
@@ -306,12 +307,12 @@ namespace PetMart
             // btXoa
             // 
             this.btXoa.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btXoa.Font = new System.Drawing.Font("Montserrat Semi Bold", 7.799999F, System.Drawing.FontStyle.Bold);
+            this.btXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.799999F, System.Drawing.FontStyle.Bold);
             this.btXoa.ForeColor = System.Drawing.Color.White;
-            this.btXoa.Location = new System.Drawing.Point(121, 23);
-            this.btXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btXoa.Location = new System.Drawing.Point(136, 29);
+            this.btXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(100, 56);
+            this.btXoa.Size = new System.Drawing.Size(112, 70);
             this.btXoa.TabIndex = 1;
             this.btXoa.Text = "XÓA";
             this.btXoa.UseVisualStyleBackColor = false;
@@ -319,12 +320,12 @@ namespace PetMart
             // btThem
             // 
             this.btThem.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btThem.Font = new System.Drawing.Font("Montserrat Semi Bold", 7.799999F, System.Drawing.FontStyle.Bold);
+            this.btThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.799999F, System.Drawing.FontStyle.Bold);
             this.btThem.ForeColor = System.Drawing.Color.White;
-            this.btThem.Location = new System.Drawing.Point(13, 23);
-            this.btThem.Margin = new System.Windows.Forms.Padding(4);
+            this.btThem.Location = new System.Drawing.Point(15, 29);
+            this.btThem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(100, 56);
+            this.btThem.Size = new System.Drawing.Size(112, 70);
             this.btThem.TabIndex = 0;
             this.btThem.Text = "THÊM";
             this.btThem.UseVisualStyleBackColor = false;
@@ -332,13 +333,13 @@ namespace PetMart
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.gVDH);
-            this.groupBox3.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(56, 393);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Location = new System.Drawing.Point(63, 491);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(915, 371);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox3.Size = new System.Drawing.Size(1029, 464);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Chi tiết đơn hàng";
@@ -347,12 +348,12 @@ namespace PetMart
             // 
             this.gVDH.BackgroundColor = System.Drawing.Color.White;
             this.gVDH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gVDH.Location = new System.Drawing.Point(29, 37);
+            this.gVDH.Location = new System.Drawing.Point(33, 46);
             this.gVDH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gVDH.Name = "gVDH";
             this.gVDH.RowHeadersWidth = 62;
             this.gVDH.RowTemplate.Height = 28;
-            this.gVDH.Size = new System.Drawing.Size(855, 318);
+            this.gVDH.Size = new System.Drawing.Size(962, 398);
             this.gVDH.TabIndex = 0;
             // 
             // menuStrip1
@@ -361,37 +362,36 @@ namespace PetMart
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1019, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1146, 24);
             this.menuStrip1.TabIndex = 15;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // btnThemCTDH
             // 
             this.btnThemCTDH.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnThemCTDH.Font = new System.Drawing.Font("Montserrat Semi Bold", 7.799999F, System.Drawing.FontStyle.Bold);
+            this.btnThemCTDH.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.799999F, System.Drawing.FontStyle.Bold);
             this.btnThemCTDH.ForeColor = System.Drawing.Color.White;
-            this.btnThemCTDH.Location = new System.Drawing.Point(259, 297);
-            this.btnThemCTDH.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThemCTDH.Location = new System.Drawing.Point(291, 371);
+            this.btnThemCTDH.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThemCTDH.Name = "btnThemCTDH";
-            this.btnThemCTDH.Size = new System.Drawing.Size(226, 57);
+            this.btnThemCTDH.Size = new System.Drawing.Size(254, 71);
             this.btnThemCTDH.TabIndex = 4;
             this.btnThemCTDH.Text = "THÊM CTDH";
             this.btnThemCTDH.UseVisualStyleBackColor = false;
             // 
             // FormQuanLyDonHang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.ClientSize = new System.Drawing.Size(1019, 781);
+            this.ClientSize = new System.Drawing.Size(1146, 976);
             this.Controls.Add(this.btnThemCTDH);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormQuanLyDonHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ ĐƠN HÀNG";
