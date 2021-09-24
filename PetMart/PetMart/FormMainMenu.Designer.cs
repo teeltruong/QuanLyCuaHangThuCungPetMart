@@ -65,11 +65,10 @@ namespace PetMart
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelMenu.Name = "panelMenu";
-<<<<<<< HEAD
-            this.panelMenu.Size = new System.Drawing.Size(294, 844);
-=======
+
+            //this.panelMenu.Size = new System.Drawing.Size(294, 844);
+            
             this.panelMenu.Size = new System.Drawing.Size(261, 761);
->>>>>>> 7108dbfbddd37aacd90557bc9762c2a653cf8ec3
             this.panelMenu.TabIndex = 0;
             // 
             // btnQLNV
@@ -206,11 +205,10 @@ namespace PetMart
             this.panelTitleBar.Location = new System.Drawing.Point(294, 0);
             this.panelTitleBar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelTitleBar.Name = "panelTitleBar";
-<<<<<<< HEAD
-            this.panelTitleBar.Size = new System.Drawing.Size(1152, 92);
-=======
+
+            //this.panelTitleBar.Size = new System.Drawing.Size(1152, 92);
+
             this.panelTitleBar.Size = new System.Drawing.Size(1047, 74);
->>>>>>> 7108dbfbddd37aacd90557bc9762c2a653cf8ec3
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -249,11 +247,10 @@ namespace PetMart
             this.panelDesktop.Location = new System.Drawing.Point(294, 92);
             this.panelDesktop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelDesktop.Name = "panelDesktop";
-<<<<<<< HEAD
-            this.panelDesktop.Size = new System.Drawing.Size(1152, 752);
-=======
+
+            //this.panelDesktop.Size = new System.Drawing.Size(1152, 752);
             this.panelDesktop.Size = new System.Drawing.Size(1047, 687);
->>>>>>> 7108dbfbddd37aacd90557bc9762c2a653cf8ec3
+
             this.panelDesktop.TabIndex = 2;
             // 
             // labelTiltle
@@ -283,11 +280,10 @@ namespace PetMart
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(1446, 844);
-=======
+
+            //this.ClientSize = new System.Drawing.Size(1446, 844);
+
             this.ClientSize = new System.Drawing.Size(1308, 761);
->>>>>>> 7108dbfbddd37aacd90557bc9762c2a653cf8ec3
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);

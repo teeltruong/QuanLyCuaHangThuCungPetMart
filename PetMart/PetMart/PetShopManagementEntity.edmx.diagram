@@ -4,14 +4,13 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="407f4fed4147405ea4a3eb7cfac4f242" Name="Diagram1">
+      <Diagram DiagramId="5cdc0206384d4daba8ec30a26e6ec2f2" Name="Diagram1">
         <EntityTypeShape EntityType="PetShopManagementModel.Category" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
         <EntityTypeShape EntityType="PetShopManagementModel.Customer" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="PetShopManagementModel.Employee" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
         <EntityTypeShape EntityType="PetShopManagementModel.Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="PetShopManagementModel.OrderDetail" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="PetShopManagementModel.Product" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="PetShopManagementModel.sysdiagram" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
         <AssociationConnector Association="PetShopManagementModel.fk_Product_Category" ManuallyRouted="false" />
         <AssociationConnector Association="PetShopManagementModel.fk_Order_Customer" ManuallyRouted="false" />
         <AssociationConnector Association="PetShopManagementModel.fk_Order_Employee" ManuallyRouted="false" />
