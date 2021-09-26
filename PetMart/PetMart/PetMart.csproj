@@ -142,6 +142,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>PetShopManagementEntity.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormDangKyAdmin.resx">
+      <DependentUpon>FormDangKyAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDangNhapAdmin.resx">
+      <DependentUpon>FormDangNhapAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,18 +181,8 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>PetShopManagementEntity.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="PetShopManagementEntity.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>PetShopManagementEntity.edmx</DependentUpon>
-      <LastGenOutput>PetShopManagementEntity.Context.cs</LastGenOutput>
-    </None>
     <None Include="PetShopManagementEntity.edmx.diagram">
       <DependentUpon>PetShopManagementEntity.edmx</DependentUpon>
-    </None>
-    <None Include="PetShopManagementEntity.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>PetShopManagementEntity.edmx</DependentUpon>
-      <LastGenOutput>PetShopManagementEntity.cs</LastGenOutput>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -209,6 +208,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\illust6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PetShopManagementEntity.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PetShopManagementEntity.edmx</DependentUpon>
+      <LastGenOutput>PetShopManagementEntity.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PetShopManagementEntity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PetShopManagementEntity.edmx</DependentUpon>
+      <LastGenOutput>PetShopManagementEntity.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
