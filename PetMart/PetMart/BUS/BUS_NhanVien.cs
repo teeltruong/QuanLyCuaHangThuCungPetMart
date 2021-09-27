@@ -18,6 +18,17 @@ namespace PetMart.BUS
             dNhanVien = new DAO_NhanVien();
         }
 
+        public bool ktlogin(string a, string b)
+        {
+            if (dNhanVien.login(a, b) == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         public void HienThiDSNV(DataGridView dgv)
         {
             dgv.DataSource = dNhanVien.LayDSNhanVien();

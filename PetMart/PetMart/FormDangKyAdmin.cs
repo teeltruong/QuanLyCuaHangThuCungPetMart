@@ -48,6 +48,9 @@ namespace PetMart
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form f = new FormDangNhapAdmin();
+            f.Show();
             
         }
     }

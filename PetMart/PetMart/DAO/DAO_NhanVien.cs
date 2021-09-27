@@ -15,6 +15,25 @@ namespace PetMart.DAO
         {
             db = new PetShopManagementEntities();
         }
+        public Boolean login(string u, string p)
+        {
+            var ds = db.Employees.Where(a => a.UserName == u).Select(b => new { b.Password}).ToList();
+                if (ds.Count > 0)
+                {
+                    if (ds[0].Password == p)
+                        return true;
+                    else
+                    {
+                        MessageBox.Show("Sai mật khẩu!");
+                        return false;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Tài khoản không tồn tại!");
+                    return false;
+                }
+        }
 
         public dynamic LayDSNhanVien()
         {
