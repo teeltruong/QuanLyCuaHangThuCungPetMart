@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PetMart.DAO
 {
@@ -13,6 +14,25 @@ namespace PetMart.DAO
         public DAO_NhanVien()
         {
             db = new PetShopManagementEntities();
+        }
+        public Boolean login(string u, string p)
+        {
+            var ds = db.Employees.Where(a => a.UserName == u).Select(b => new { b.Password}).ToList();
+                if (ds.Count > 0)
+                {
+                    if (ds[0].Password == p)
+                        return true;
+                    else
+                    {
+                        MessageBox.Show("Sai mật khẩu!");
+                        return false;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Tài khoản không tồn tại!");
+                    return false;
+                }
         }
 
         public dynamic LayDSNhanVien()
@@ -65,5 +85,7 @@ namespace PetMart.DAO
             db.Employees.Remove(nv);
             db.SaveChanges();
         }
+
+       
     }
 }

@@ -29,32 +29,31 @@ namespace PetMart
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhapAdmin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.tbUsername = new System.Windows.Forms.TextBox();
+            this.txbUserName = new System.Windows.Forms.TextBox();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.tbPassword = new System.Windows.Forms.TextBox();
+            this.txbPassWord = new System.Windows.Forms.TextBox();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnTaoTaiKhoan = new System.Windows.Forms.Button();
-            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -82,41 +81,60 @@ namespace PetMart
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.Snow;
             this.label3.Location = new System.Drawing.Point(126, 74);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(253, 20);
+            this.label3.Size = new System.Drawing.Size(261, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "HỆ THỐNG CỬA HÀNG THÚ CƯNG";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sigmar One", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
             this.label1.Location = new System.Drawing.Point(118, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 42);
+            this.label1.Size = new System.Drawing.Size(133, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "PETMART";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(52, 33);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(68, 68);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(21, 153);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(379, 382);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Montserrat Black", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
             this.label2.Location = new System.Drawing.Point(527, 79);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(207, 39);
+            this.label2.Size = new System.Drawing.Size(190, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "ĐĂNG NHẬP";
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.tbUsername);
+            this.panel2.Controls.Add(this.txbUserName);
             this.panel2.Controls.Add(this.iconPictureBox1);
             this.panel2.Location = new System.Drawing.Point(458, 162);
             this.panel2.Name = "panel2";
@@ -131,84 +149,15 @@ namespace PetMart
             this.panel3.Size = new System.Drawing.Size(276, 2);
             this.panel3.TabIndex = 3;
             // 
-            // tbUsername
+            // txbUserName
             // 
-            this.tbUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
-            this.tbUsername.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tbUsername.Location = new System.Drawing.Point(66, 19);
-            this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(237, 22);
-            this.tbUsername.TabIndex = 1;
-            this.tbUsername.Text = "Username";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.tbPassword);
-            this.panel4.Controls.Add(this.iconPictureBox2);
-            this.panel4.Location = new System.Drawing.Point(458, 237);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(325, 69);
-            this.panel4.TabIndex = 4;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
-            this.panel5.Location = new System.Drawing.Point(27, 49);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(276, 2);
-            this.panel5.TabIndex = 3;
-            // 
-            // tbPassword
-            // 
-            this.tbPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
-            this.tbPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.tbPassword.Location = new System.Drawing.Point(66, 19);
-            this.tbPassword.Name = "tbPassword";
-            this.tbPassword.Size = new System.Drawing.Size(237, 22);
-            this.tbPassword.TabIndex = 1;
-            this.tbPassword.Text = "Password";
-            // 
-            // btnDangNhap
-            // 
-            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
-            this.btnDangNhap.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnDangNhap.FlatAppearance.BorderSize = 0;
-            this.btnDangNhap.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnDangNhap.Location = new System.Drawing.Point(487, 332);
-            this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(276, 39);
-            this.btnDangNhap.TabIndex = 6;
-            this.btnDangNhap.Text = "ĐĂNG NHẬP";
-            this.btnDangNhap.UseVisualStyleBackColor = false;
-            // 
-            // btnTaoTaiKhoan
-            // 
-            this.btnTaoTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
-            this.btnTaoTaiKhoan.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
-            this.btnTaoTaiKhoan.FlatAppearance.BorderSize = 2;
-            this.btnTaoTaiKhoan.Font = new System.Drawing.Font("Montserrat ExtraBold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTaoTaiKhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
-            this.btnTaoTaiKhoan.Location = new System.Drawing.Point(487, 379);
-            this.btnTaoTaiKhoan.Name = "btnTaoTaiKhoan";
-            this.btnTaoTaiKhoan.Size = new System.Drawing.Size(276, 39);
-            this.btnTaoTaiKhoan.TabIndex = 7;
-            this.btnTaoTaiKhoan.Text = "TẠO TÀI KHOẢN";
-            this.btnTaoTaiKhoan.UseVisualStyleBackColor = false;
-            // 
-            // iconPictureBox2
-            // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
-            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
-            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 30;
-            this.iconPictureBox2.Location = new System.Drawing.Point(27, 15);
-            this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox2.TabIndex = 0;
-            this.iconPictureBox2.TabStop = false;
+            this.txbUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
+            this.txbUserName.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txbUserName.Location = new System.Drawing.Point(66, 19);
+            this.txbUserName.Name = "txbUserName";
+            this.txbUserName.Size = new System.Drawing.Size(237, 22);
+            this.txbUserName.TabIndex = 1;
+            this.txbUserName.Text = "Username";
             // 
             // iconPictureBox1
             // 
@@ -223,26 +172,75 @@ namespace PetMart
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // panel4
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(52, 33);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(68, 68);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.txbPassWord);
+            this.panel4.Controls.Add(this.iconPictureBox2);
+            this.panel4.Location = new System.Drawing.Point(458, 237);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(325, 69);
+            this.panel4.TabIndex = 4;
             // 
-            // pictureBox1
+            // panel5
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 153);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(379, 382);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
+            this.panel5.Location = new System.Drawing.Point(27, 49);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(276, 2);
+            this.panel5.TabIndex = 3;
+            // 
+            // txbPassWord
+            // 
+            this.txbPassWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
+            this.txbPassWord.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txbPassWord.Location = new System.Drawing.Point(66, 19);
+            this.txbPassWord.Name = "txbPassWord";
+            this.txbPassWord.Size = new System.Drawing.Size(237, 22);
+            this.txbPassWord.TabIndex = 1;
+            this.txbPassWord.Text = "Password";
+            // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Lock;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.Location = new System.Drawing.Point(27, 15);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox2.TabIndex = 0;
+            this.iconPictureBox2.TabStop = false;
+            // 
+            // btnDangNhap
+            // 
+            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
+            this.btnDangNhap.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnDangNhap.FlatAppearance.BorderSize = 0;
+            this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDangNhap.Location = new System.Drawing.Point(487, 332);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(276, 39);
+            this.btnDangNhap.TabIndex = 6;
+            this.btnDangNhap.Text = "ĐĂNG NHẬP";
+            this.btnDangNhap.UseVisualStyleBackColor = false;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            // 
+            // btnTaoTaiKhoan
+            // 
+            this.btnTaoTaiKhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
+            this.btnTaoTaiKhoan.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
+            this.btnTaoTaiKhoan.FlatAppearance.BorderSize = 2;
+            this.btnTaoTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTaoTaiKhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
+            this.btnTaoTaiKhoan.Location = new System.Drawing.Point(487, 379);
+            this.btnTaoTaiKhoan.Name = "btnTaoTaiKhoan";
+            this.btnTaoTaiKhoan.Size = new System.Drawing.Size(276, 39);
+            this.btnTaoTaiKhoan.TabIndex = 7;
+            this.btnTaoTaiKhoan.Text = "TẠO TÀI KHOẢN";
+            this.btnTaoTaiKhoan.UseVisualStyleBackColor = false;
+            this.btnTaoTaiKhoan.Click += new System.EventHandler(this.btnTaoTaiKhoan_Click);
             // 
             // FormDangNhapAdmin
             // 
@@ -262,14 +260,14 @@ namespace PetMart
             this.panel1.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,11 +283,11 @@ namespace PetMart
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private System.Windows.Forms.TextBox tbUsername;
+        private System.Windows.Forms.TextBox txbUserName;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox tbPassword;
+        private System.Windows.Forms.TextBox txbPassWord;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Label label3;

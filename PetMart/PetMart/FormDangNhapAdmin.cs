@@ -7,16 +7,47 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PetMart.BUS;
+using PetMart.DAO;
 
 namespace PetMart
 {
     public partial class FormDangNhapAdmin : Form
     {
+        BUS_NhanVien bNhanVien;
         public FormDangNhapAdmin()
         {
             InitializeComponent();
+            bNhanVien = new BUS_NhanVien();
         }
 
-      
+        //Loi
+        private void btnDangNhap_Click(object sender, EventArgs e)
+        {
+        
+            string userName = txbUserName.Text;
+            string passWord = txbPassWord.Text;
+            if (bNhanVien.ktlogin(userName, passWord) == true)
+            {
+                MessageBox.Show("Đăng nhập thành công!!");
+                FormMainMenu f = new FormMainMenu();
+                this.Hide();
+                f.ShowDialog();
+                this.Show();
+            }
+            else
+            {
+
+            }
+        }
+
+
+        private void btnTaoTaiKhoan_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FormDangKyAdmin f = new FormDangKyAdmin();
+            f.ShowDialog();
+
+        }
     }
 }
