@@ -35,6 +35,8 @@ namespace PetMart
             this.dienThoaiLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtTen = new System.Windows.Forms.TextBox();
             this.cbGioiTinh = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtHo = new System.Windows.Forms.TextBox();
@@ -61,8 +63,7 @@ namespace PetMart
             this.btThem = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dGNhanVien = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtTen = new System.Windows.Forms.TextBox();
+            this.reportNV = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -147,6 +148,24 @@ namespace PetMart
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin chi tiết";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(30, 119);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 20);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Tên:";
+            // 
+            // txtTen
+            // 
+            this.txtTen.Location = new System.Drawing.Point(186, 116);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(299, 25);
+            this.txtTen.TabIndex = 16;
             // 
             // cbGioiTinh
             // 
@@ -300,6 +319,7 @@ namespace PetMart
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.reportNV);
             this.groupBox2.Controls.Add(this.btThoat);
             this.groupBox2.Controls.Add(this.btSua);
             this.groupBox2.Controls.Add(this.btXoa);
@@ -385,7 +405,6 @@ namespace PetMart
             // dGNhanVien
             // 
             this.dGNhanVien.BackgroundColor = System.Drawing.Color.White;
-            this.dGNhanVien.ForeColor = System.Drawing.Color.Black;
             this.dGNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGNhanVien.Location = new System.Drawing.Point(21, 41);
             this.dGNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -395,23 +414,19 @@ namespace PetMart
             this.dGNhanVien.TabIndex = 12;
             this.dGNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGNhanVien_CellClick);
             // 
-            // label4
+            // reportNV
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(30, 119);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 20);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Tên:";
-            // 
-            // txtTen
-            // 
-            this.txtTen.Location = new System.Drawing.Point(186, 116);
-            this.txtTen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(299, 25);
-            this.txtTen.TabIndex = 16;
+            this.reportNV.BackColor = System.Drawing.Color.AliceBlue;
+            this.reportNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.799999F, System.Drawing.FontStyle.Bold);
+            this.reportNV.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.reportNV.Location = new System.Drawing.Point(169, 250);
+            this.reportNV.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.reportNV.Name = "reportNV";
+            this.reportNV.Size = new System.Drawing.Size(119, 71);
+            this.reportNV.TabIndex = 4;
+            this.reportNV.Text = "REPORT";
+            this.reportNV.UseVisualStyleBackColor = false;
+            this.reportNV.Click += new System.EventHandler(this.reportNV_Click);
             // 
             // FormQuanLyNhanVien
             // 
@@ -477,5 +492,6 @@ namespace PetMart
         private System.Windows.Forms.ComboBox cbGioiTinh;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTen;
+        private System.Windows.Forms.Button reportNV;
     }
 }

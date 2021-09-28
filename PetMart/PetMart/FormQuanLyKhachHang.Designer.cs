@@ -61,6 +61,7 @@ namespace PetMart
             this.btThem = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dGKhachHang = new System.Windows.Forms.DataGridView();
+            this.reportKH = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -296,6 +297,7 @@ namespace PetMart
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.reportKH);
             this.groupBox2.Controls.Add(this.btThoat);
             this.groupBox2.Controls.Add(this.btSua);
             this.groupBox2.Controls.Add(this.btXoa);
@@ -313,7 +315,7 @@ namespace PetMart
             this.btThoat.BackColor = System.Drawing.Color.AliceBlue;
             this.btThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.799999F, System.Drawing.FontStyle.Bold);
             this.btThoat.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.btThoat.Location = new System.Drawing.Point(230, 158);
+            this.btThoat.Location = new System.Drawing.Point(256, 129);
             this.btThoat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btThoat.Name = "btThoat";
             this.btThoat.Size = new System.Drawing.Size(119, 71);
@@ -327,7 +329,7 @@ namespace PetMart
             this.btSua.BackColor = System.Drawing.Color.AliceBlue;
             this.btSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.799999F, System.Drawing.FontStyle.Bold);
             this.btSua.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.btSua.Location = new System.Drawing.Point(90, 158);
+            this.btSua.Location = new System.Drawing.Point(90, 136);
             this.btSua.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(119, 71);
@@ -341,7 +343,7 @@ namespace PetMart
             this.btXoa.BackColor = System.Drawing.Color.AliceBlue;
             this.btXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.799999F, System.Drawing.FontStyle.Bold);
             this.btXoa.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.btXoa.Location = new System.Drawing.Point(230, 51);
+            this.btXoa.Location = new System.Drawing.Point(256, 32);
             this.btXoa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(119, 71);
@@ -355,7 +357,7 @@ namespace PetMart
             this.btThem.BackColor = System.Drawing.Color.AliceBlue;
             this.btThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.799999F, System.Drawing.FontStyle.Bold);
             this.btThem.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.btThem.Location = new System.Drawing.Point(90, 51);
+            this.btThem.Location = new System.Drawing.Point(90, 32);
             this.btThem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(119, 71);
@@ -381,7 +383,6 @@ namespace PetMart
             // dGKhachHang
             // 
             this.dGKhachHang.BackgroundColor = System.Drawing.Color.White;
-            this.dGKhachHang.ForeColor = System.Drawing.Color.Black;
             this.dGKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGKhachHang.Location = new System.Drawing.Point(21, 41);
             this.dGKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -390,6 +391,20 @@ namespace PetMart
             this.dGKhachHang.Size = new System.Drawing.Size(954, 320);
             this.dGKhachHang.TabIndex = 12;
             this.dGKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGNhanVien_CellClick);
+            // 
+            // reportKH
+            // 
+            this.reportKH.BackColor = System.Drawing.Color.AliceBlue;
+            this.reportKH.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.799999F, System.Drawing.FontStyle.Bold);
+            this.reportKH.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.reportKH.Location = new System.Drawing.Point(178, 222);
+            this.reportKH.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.reportKH.Name = "reportKH";
+            this.reportKH.Size = new System.Drawing.Size(119, 71);
+            this.reportKH.TabIndex = 4;
+            this.reportKH.Text = "REPORT";
+            this.reportKH.UseVisualStyleBackColor = false;
+            this.reportKH.Click += new System.EventHandler(this.reportKH_Click);
             // 
             // FormQuanLyKhachHang
             // 
@@ -453,6 +468,6 @@ namespace PetMart
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.ComboBox cbGioiTinh;
-
+        private System.Windows.Forms.Button reportKH;
     }
 }

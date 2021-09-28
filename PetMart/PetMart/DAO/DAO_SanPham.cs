@@ -28,6 +28,12 @@ namespace PetMart.DAO
             return ds;
         }
 
+        public List<Product> LayDSSanPhamReport()
+        {
+            var ds = db.Products.Select(s => s).ToList();
+            return ds;
+        }
+
         public dynamic LayDSLoaiSP()
         {
             var ds = db.Categories.Select(s => new

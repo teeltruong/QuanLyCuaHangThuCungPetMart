@@ -61,6 +61,7 @@ namespace PetMart
             this.btThem = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dGSP = new System.Windows.Forms.DataGridView();
+            this.reportSP = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -389,7 +390,20 @@ namespace PetMart
             this.dGSP.Size = new System.Drawing.Size(983, 289);
             this.dGSP.TabIndex = 0;
             this.dGSP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGSP_CellClick);
-            this.dGSP.ForeColor = System.Drawing.Color.Black;
+            // 
+            // reportSP
+            // 
+            this.reportSP.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.reportSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.reportSP.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.reportSP.Location = new System.Drawing.Point(724, 36);
+            this.reportSP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.reportSP.Name = "reportSP";
+            this.reportSP.Size = new System.Drawing.Size(136, 89);
+            this.reportSP.TabIndex = 4;
+            this.reportSP.Text = "Report";
+            this.reportSP.UseVisualStyleBackColor = false;
+            this.reportSP.Click += new System.EventHandler(this.reportSP_Click);
             // 
             // FormQuanLySanPham
             // 
@@ -397,6 +411,7 @@ namespace PetMart
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(1146, 895);
+            this.Controls.Add(this.reportSP);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -453,5 +468,6 @@ namespace PetMart
         private System.Windows.Forms.DataGridView dGSP;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtMaSP;
+        private System.Windows.Forms.Button reportSP;
     }
 }

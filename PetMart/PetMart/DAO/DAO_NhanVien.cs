@@ -51,6 +51,12 @@ namespace PetMart.DAO
             return ds;
         }
 
+        public List<Employee> LayDSNhanVienReport()
+        {
+            var ds = db.Employees.Select(s => s).ToList();
+            return ds;
+        }
+
         public void ThemNhanVien(Employee e)
         {
             db.Employees.Add(e);

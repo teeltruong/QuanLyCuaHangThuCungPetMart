@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="eda107ccc97f44f48b81af21ef5fbf02" Name="Diagram1">
+      <Diagram DiagramId="d7998391d2754980ab9e89d9f71cda1b" Name="Diagram1">
         <EntityTypeShape EntityType="PetShopManagementModel.Category" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
         <EntityTypeShape EntityType="PetShopManagementModel.Customer" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="PetShopManagementModel.Employee" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />

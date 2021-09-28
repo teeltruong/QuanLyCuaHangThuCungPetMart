@@ -305,6 +305,7 @@ namespace PetMart
             this.txtPhone.Size = new System.Drawing.Size(153, 26);
             this.txtPhone.TabIndex = 3;
             this.txtPhone.Text = "Phone";
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhone_KeyPress);
             // 
             // btnDangky
             // 
