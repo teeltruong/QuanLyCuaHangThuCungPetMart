@@ -33,11 +33,12 @@ namespace PetMart
                 FormMainMenu f = new FormMainMenu();
                 this.Hide();
                 f.ShowDialog();
-                this.Show();
             }
             else
             {
-
+                MessageBox.Show("Đăng nhập thất bại!!");
+                txbUserName.Clear();
+                txbPassWord.Clear();
             }
         }
 

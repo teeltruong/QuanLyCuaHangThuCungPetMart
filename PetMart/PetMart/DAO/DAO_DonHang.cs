@@ -25,7 +25,7 @@ namespace PetMart.DAO
                 {
                     s.OrderID,
                     s.CreatedDate,
-                    s.Customer.Address,
+                    s.Customer.FullName,
                     s.Employee.LastName
                 }).ToList();
                 return ds;
@@ -45,7 +45,7 @@ namespace PetMart.DAO
                 var ds = db.Customers.Select(kh => new
                 {
                     kh.CustomerID,
-                    kh.Address
+                    kh.FullName
                 }).ToList();
                 return ds;
             }

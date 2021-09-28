@@ -38,7 +38,10 @@ namespace PetMart
             if (bNhanVien.ThemNV(nv))
             {
                 MessageBox.Show("Tạo tài khoản thành công");
-                
+                this.Hide();
+                Form f = new FormDangNhapAdmin();
+                f.Show();
+
             }
             else
             {

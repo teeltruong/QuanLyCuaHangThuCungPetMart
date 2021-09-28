@@ -35,7 +35,7 @@ namespace PetMart
         private void FormQuanLyDonHang_Load(object sender, EventArgs e)
         {
             CapNhapGridView();
-            busDonHang.HienThiDSKH(cbAddress);
+            busDonHang.HienThiDSKH(cbKhachHang);
             busDonHang.HienThiDSNV(cbNhanVien);
 
         }
@@ -47,7 +47,7 @@ namespace PetMart
                 txtMaDH.Enabled = false;
                 txtMaDH.Text = gVDH.Rows[e.RowIndex].Cells["OrderID"].Value.ToString();
                 dtpNgayDH.Text = gVDH.Rows[e.RowIndex].Cells[1].Value.ToString();
-                cbAddress.Text = gVDH.Rows[e.RowIndex].Cells[2].Value.ToString();
+                cbKhachHang.Text = gVDH.Rows[e.RowIndex].Cells[2].Value.ToString();
                 cbNhanVien.Text = gVDH.Rows[e.RowIndex].Cells[3].Value.ToString();
 
 
@@ -57,7 +57,7 @@ namespace PetMart
         private void btThem_Click(object sender, EventArgs e)
         {
             Order dh = new Order();
-            dh.CustomerID = cbAddress.SelectedIndex;
+            dh.CustomerID = cbKhachHang.SelectedIndex;
             dh.CreatedDate = DateTime.Parse(dtpNgayDH.Value.ToString("yyyy/MM/dd"));
             dh.EmployeeID = Int32.Parse(cbNhanVien.SelectedValue.ToString());
             if (busDonHang.ThemDH(dh))
@@ -97,7 +97,7 @@ namespace PetMart
             Order dh = new Order();
             //dh.OrderID = int.Parse(gVDH.CurrentRow.Cells["OrderID"].Value.ToString());
             dh.OrderID = int.Parse(txtMaDH.Text);
-            dh.CustomerID = cbAddress.SelectedIndex;
+            dh.CustomerID = int.Parse(cbKhachHang.SelectedValue.ToString());
             dh.EmployeeID = int.Parse(cbNhanVien.SelectedValue.ToString());
             //dh.CreatedDate = DateTime.Parse(dtpNgayDH.Value.ToString("yyyy/MM/dd"));
             dh.CreatedDate = dtpNgayDH.Value;

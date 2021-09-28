@@ -34,7 +34,7 @@ namespace PetMart.BUS
         public void HienThiDSKH(ComboBox cb)
         {
             cb.DataSource = dDonHang.LayDSKH();
-            cb.DisplayMember = "Address";
+            cb.DisplayMember = "FullName";
             cb.ValueMember = "CustomerID";
 
         }

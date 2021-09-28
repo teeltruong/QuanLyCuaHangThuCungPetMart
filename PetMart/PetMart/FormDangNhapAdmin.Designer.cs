@@ -63,8 +63,9 @@ namespace PetMart
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(420, 533);
+            this.panel1.Size = new System.Drawing.Size(472, 666);
             this.panel1.TabIndex = 0;
             // 
             // panelLogo
@@ -74,8 +75,9 @@ namespace PetMart
             this.panelLogo.Controls.Add(this.pictureBox2);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(420, 128);
+            this.panelLogo.Size = new System.Drawing.Size(472, 160);
             this.panelLogo.TabIndex = 1;
             // 
             // label3
@@ -83,9 +85,9 @@ namespace PetMart
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.Snow;
-            this.label3.Location = new System.Drawing.Point(126, 74);
+            this.label3.Location = new System.Drawing.Point(142, 92);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(261, 17);
+            this.label3.Size = new System.Drawing.Size(296, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "HỆ THỐNG CỬA HÀNG THÚ CƯNG";
             // 
@@ -94,9 +96,9 @@ namespace PetMart
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(118, 32);
+            this.label1.Location = new System.Drawing.Point(133, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 29);
+            this.label1.Size = new System.Drawing.Size(159, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "PETMART";
             // 
@@ -104,18 +106,20 @@ namespace PetMart
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(52, 33);
+            this.pictureBox2.Location = new System.Drawing.Point(58, 41);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(68, 68);
+            this.pictureBox2.Size = new System.Drawing.Size(76, 85);
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 153);
+            this.pictureBox1.Location = new System.Drawing.Point(24, 191);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(379, 382);
+            this.pictureBox1.Size = new System.Drawing.Size(426, 478);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -124,10 +128,10 @@ namespace PetMart
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
-            this.label2.Location = new System.Drawing.Point(527, 79);
+            this.label2.Location = new System.Drawing.Point(593, 99);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 32);
+            this.label2.Size = new System.Drawing.Size(223, 38);
             this.label2.TabIndex = 1;
             this.label2.Text = "ĐĂNG NHẬP";
             // 
@@ -136,26 +140,29 @@ namespace PetMart
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.txbUserName);
             this.panel2.Controls.Add(this.iconPictureBox1);
-            this.panel2.Location = new System.Drawing.Point(458, 162);
+            this.panel2.Location = new System.Drawing.Point(515, 202);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(325, 69);
+            this.panel2.Size = new System.Drawing.Size(366, 86);
             this.panel2.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
-            this.panel3.Location = new System.Drawing.Point(27, 49);
+            this.panel3.Location = new System.Drawing.Point(30, 61);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(276, 2);
+            this.panel3.Size = new System.Drawing.Size(310, 2);
             this.panel3.TabIndex = 3;
             // 
             // txbUserName
             // 
             this.txbUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
             this.txbUserName.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txbUserName.Location = new System.Drawing.Point(66, 19);
+            this.txbUserName.Location = new System.Drawing.Point(74, 24);
+            this.txbUserName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbUserName.Name = "txbUserName";
-            this.txbUserName.Size = new System.Drawing.Size(237, 22);
+            this.txbUserName.Size = new System.Drawing.Size(266, 26);
             this.txbUserName.TabIndex = 1;
             this.txbUserName.Text = "Username";
             // 
@@ -166,9 +173,11 @@ namespace PetMart
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
             this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.Location = new System.Drawing.Point(26, 13);
+            this.iconPictureBox1.IconSize = 36;
+            this.iconPictureBox1.Location = new System.Drawing.Point(29, 16);
+            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox1.Size = new System.Drawing.Size(36, 40);
             this.iconPictureBox1.TabIndex = 0;
             this.iconPictureBox1.TabStop = false;
             // 
@@ -177,26 +186,30 @@ namespace PetMart
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.txbPassWord);
             this.panel4.Controls.Add(this.iconPictureBox2);
-            this.panel4.Location = new System.Drawing.Point(458, 237);
+            this.panel4.Location = new System.Drawing.Point(515, 296);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(325, 69);
+            this.panel4.Size = new System.Drawing.Size(366, 86);
             this.panel4.TabIndex = 4;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
-            this.panel5.Location = new System.Drawing.Point(27, 49);
+            this.panel5.Location = new System.Drawing.Point(30, 61);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(276, 2);
+            this.panel5.Size = new System.Drawing.Size(310, 2);
             this.panel5.TabIndex = 3;
             // 
             // txbPassWord
             // 
             this.txbPassWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
             this.txbPassWord.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txbPassWord.Location = new System.Drawing.Point(66, 19);
+            this.txbPassWord.Location = new System.Drawing.Point(74, 24);
+            this.txbPassWord.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txbPassWord.Name = "txbPassWord";
-            this.txbPassWord.Size = new System.Drawing.Size(237, 22);
+            this.txbPassWord.PasswordChar = '*';
+            this.txbPassWord.Size = new System.Drawing.Size(266, 26);
             this.txbPassWord.TabIndex = 1;
             this.txbPassWord.Text = "Password";
             // 
@@ -207,9 +220,11 @@ namespace PetMart
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Lock;
             this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.Location = new System.Drawing.Point(27, 15);
+            this.iconPictureBox2.IconSize = 36;
+            this.iconPictureBox2.Location = new System.Drawing.Point(30, 19);
+            this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox2.Size = new System.Drawing.Size(36, 40);
             this.iconPictureBox2.TabIndex = 0;
             this.iconPictureBox2.TabStop = false;
             // 
@@ -219,9 +234,10 @@ namespace PetMart
             this.btnDangNhap.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnDangNhap.FlatAppearance.BorderSize = 0;
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnDangNhap.Location = new System.Drawing.Point(487, 332);
+            this.btnDangNhap.Location = new System.Drawing.Point(548, 415);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(276, 39);
+            this.btnDangNhap.Size = new System.Drawing.Size(310, 49);
             this.btnDangNhap.TabIndex = 6;
             this.btnDangNhap.Text = "ĐĂNG NHẬP";
             this.btnDangNhap.UseVisualStyleBackColor = false;
@@ -234,9 +250,10 @@ namespace PetMart
             this.btnTaoTaiKhoan.FlatAppearance.BorderSize = 2;
             this.btnTaoTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTaoTaiKhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(150)))), ((int)(((byte)(173)))));
-            this.btnTaoTaiKhoan.Location = new System.Drawing.Point(487, 379);
+            this.btnTaoTaiKhoan.Location = new System.Drawing.Point(548, 474);
+            this.btnTaoTaiKhoan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTaoTaiKhoan.Name = "btnTaoTaiKhoan";
-            this.btnTaoTaiKhoan.Size = new System.Drawing.Size(276, 39);
+            this.btnTaoTaiKhoan.Size = new System.Drawing.Size(310, 49);
             this.btnTaoTaiKhoan.TabIndex = 7;
             this.btnTaoTaiKhoan.Text = "TẠO TÀI KHOẢN";
             this.btnTaoTaiKhoan.UseVisualStyleBackColor = false;
@@ -244,10 +261,10 @@ namespace PetMart
             // 
             // FormDangNhapAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
-            this.ClientSize = new System.Drawing.Size(822, 533);
+            this.ClientSize = new System.Drawing.Size(925, 666);
             this.Controls.Add(this.btnTaoTaiKhoan);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.panel4);
@@ -255,6 +272,7 @@ namespace PetMart
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormDangNhapAdmin";
             this.Text = "FormDangNhapAdmin";
             this.panel1.ResumeLayout(false);
