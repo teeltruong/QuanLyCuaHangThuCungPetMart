@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PetMart.BUS;
+using PetMart.Report;
 
 namespace PetMart
 {
@@ -119,6 +120,15 @@ namespace PetMart
         private void btThoat_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cRKhachHang r = new cRKhachHang();
+            FormReport f = new FormReport();
+            r.SetDataSource(bKhachHang.LayDSKH().ToList());
+            f.crystalReportViewer1.ReportSource = r;
+            f.Show();
         }
     }
 }

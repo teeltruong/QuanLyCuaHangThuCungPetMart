@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PetMart.BUS;
+using PetMart.Report;
 
 namespace PetMart
 {
@@ -128,6 +129,15 @@ namespace PetMart
         private void dGNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            cRNhanVien r = new cRNhanVien();
+            FormReport f = new FormReport();
+            r.SetDataSource(bNhanVien.LayDSNV().ToList());
+            f.crystalReportViewer1.ReportSource = r;
+            f.Show();
         }
     }
 }

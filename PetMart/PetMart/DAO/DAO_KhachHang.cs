@@ -30,6 +30,12 @@ namespace PetMart.DAO
             return ds;
         }
 
+        public List<Customer> LayDSKhachHangReport()
+        {
+            var ds = db.Customers.Select(s => s).ToList();
+            return ds;
+        }
+
         public void ThemKhachHang(Customer c)
         {
             db.Customers.Add(c);

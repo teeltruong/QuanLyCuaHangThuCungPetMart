@@ -40,6 +40,12 @@ namespace PetMart.DAO
             return ds;
         }
 
+        public List<Product> LayDSSanPhamReport()
+        {
+            var ds = db.Products.Select(s => s).ToList();
+            return ds;
+        }
+
         public void ThemSanPham(Product p)
         {
             db.Products.Add(p);

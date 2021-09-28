@@ -61,6 +61,7 @@ namespace PetMart
             this.btThem = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dGKhachHang = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -381,7 +382,6 @@ namespace PetMart
             // dGKhachHang
             // 
             this.dGKhachHang.BackgroundColor = System.Drawing.Color.White;
-            this.dGKhachHang.ForeColor = System.Drawing.Color.Black;
             this.dGKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGKhachHang.Location = new System.Drawing.Point(21, 41);
             this.dGKhachHang.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -391,12 +391,27 @@ namespace PetMart
             this.dGKhachHang.TabIndex = 12;
             this.dGKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGNhanVien_CellClick);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.AliceBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.799999F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.Location = new System.Drawing.Point(867, 22);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 71);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "THÊM";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormQuanLyKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1146, 789);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -453,6 +468,6 @@ namespace PetMart
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.ComboBox cbGioiTinh;
-
+        private System.Windows.Forms.Button button1;
     }
 }

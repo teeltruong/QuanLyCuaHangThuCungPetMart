@@ -23,6 +23,11 @@ namespace PetMart.BUS
             dgv.DataSource = dKhachHang.LayDSKhachHang();
         }
 
+        public List<Customer> LayDSKH()
+        {
+            return dKhachHang.LayDSKhachHangReport();
+        }
+
         public bool ThemKhachHang(Customer c)
         {
             try

@@ -61,6 +61,7 @@ namespace PetMart
             this.btThem = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dGSP = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -389,7 +390,20 @@ namespace PetMart
             this.dGSP.Size = new System.Drawing.Size(983, 289);
             this.dGSP.TabIndex = 0;
             this.dGSP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGSP_CellClick);
-            this.dGSP.ForeColor = System.Drawing.Color.Black;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(714, 36);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(136, 89);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Thêm";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormQuanLySanPham
             // 
@@ -397,6 +411,7 @@ namespace PetMart
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(1146, 895);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -453,5 +468,6 @@ namespace PetMart
         private System.Windows.Forms.DataGridView dGSP;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtMaSP;
+        private System.Windows.Forms.Button button1;
     }
 }

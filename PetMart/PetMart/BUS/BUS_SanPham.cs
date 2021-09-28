@@ -23,9 +23,10 @@ namespace PetMart.BUS
             dgv.DataSource = dSanPham.LayDSSanPham();
         }
 
-       
-
-       
+        public List<Product> LayDSSP()
+        {
+            return dSanPham.LayDSSanPhamReport();
+        }
 
         public void LayDanhSachLoaiSP(ComboBox cb)
         {

@@ -34,6 +34,11 @@ namespace PetMart.BUS
             dgv.DataSource = dNhanVien.LayDSNhanVien();
         }
 
+        public List<Employee> LayDSNV()
+        {
+            return dNhanVien.LayDSNhanVienReport();
+        }
+
         public bool ThemNV(Employee e)
         {
             try
