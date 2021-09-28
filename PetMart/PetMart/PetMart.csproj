@@ -254,7 +254,6 @@
   <ItemGroup>
     <None Include="Resources\illust6.png" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="PetShopManagementEntity.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
