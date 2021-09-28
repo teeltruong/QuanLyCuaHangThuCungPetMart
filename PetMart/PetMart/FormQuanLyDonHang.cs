@@ -7,14 +7,139 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PetMart.BUS;
 
 namespace PetMart
 {
     public partial class FormQuanLyDonHang : Form
     {
+        BUS_DonHang busDonHang;
         public FormQuanLyDonHang()
         {
             InitializeComponent();
+            busDonHang = new BUS_DonHang();
         }
-    }
+
+        private void CapNhapGridView()
+        {
+            gVDH.DataSource = null;
+            busDonHang.HienThiDSDonHang(gVDH);
+            gVDH.Columns[0].Width = (int)(0.2 * gVDH.Width);
+            gVDH.Columns[1].Width = (int)(0.2 * gVDH.Width);
+            gVDH.Columns[2].Width = (int)(0.2 * gVDH.Width);
+            gVDH.Columns[3].Width = (int)(0.3 * gVDH.Width);
+        }
+
+
+
+        private void FormQuanLyDonHang_Load(object sender, EventArgs e)
+        {
+            CapNhapGridView();
+            busDonHang.HienThiDSKH(cbAddress);
+            busDonHang.HienThiDSNV(cbNhanVien);
+
+        }
+
+        private void gVDH_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.RowIndex < gVDH.Rows.Count)
+            {
+                txtMaDH.Enabled = false;
+                txtMaDH.Text = gVDH.Rows[e.RowIndex].Cells["OrderID"].Value.ToString();
+                dtpNgayDH.Text = gVDH.Rows[e.RowIndex].Cells[1].Value.ToString();
+                cbAddress.Text = gVDH.Rows[e.RowIndex].Cells[2].Value.ToString();
+                cbNhanVien.Text = gVDH.Rows[e.RowIndex].Cells[3].Value.ToString();
+
+
+            }
+        }
+
+        private void btThem_Click(object sender, EventArgs e)
+        {
+            Order dh = new Order();
+            dh.CustomerID = cbAddress.SelectedIndex;
+            dh.CreatedDate = DateTime.Parse(dtpNgayDH.Value.ToString("yyyy/MM/dd"));
+            dh.EmployeeID = Int32.Parse(cbNhanVien.SelectedValue.ToString());
+            if (busDonHang.ThemDH(dh))
+            {
+                MessageBox.Show("Tạo đơn hàng thành công");
+                busDonHang.HienThiDSDonHang(gVDH);
+            }
+            else
+            {
+                MessageBox.Show("Tạo đơn hàng thất bại");
+            }
+
+
+        }
+
+        private void gVDH_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int ma;
+            ma = int.Parse(gVDH.CurrentRow.Cells[0].Value.ToString());
+            //Truyen cho form CTDH
+            FormChiTietDonHang fChiTietDH = new FormChiTietDonHang();
+            fChiTietDH.ma = ma;
+            fChiTietDH.ShowDialog();
+        }
+
+    
+
+        private void btnThemCTDH_Click_1(object sender, EventArgs e)
+        {
+            FormChiTietDonHang fChiTietDH = new FormChiTietDonHang();
+            fChiTietDH.ma = int.Parse(gVDH.CurrentRow.Cells["OrderID"].Value.ToString());
+            fChiTietDH.ShowDialog();
+        }
+
+        private void btSua_Click_1(object sender, EventArgs e)
+        {
+            Order dh = new Order();
+            //dh.OrderID = int.Parse(gVDH.CurrentRow.Cells["OrderID"].Value.ToString());
+            dh.OrderID = int.Parse(txtMaDH.Text);
+            dh.CustomerID = cbAddress.SelectedIndex;
+            dh.EmployeeID = int.Parse(cbNhanVien.SelectedValue.ToString());
+            //dh.CreatedDate = DateTime.Parse(dtpNgayDH.Value.ToString("yyyy/MM/dd"));
+            dh.CreatedDate = dtpNgayDH.Value;
+            if (busDonHang.SuaDH(dh))
+            {
+                MessageBox.Show("Sửa đơn hàng thành công");
+                busDonHang.HienThiDSDonHang(gVDH);
+            }
+            else
+            {
+                MessageBox.Show("Sửa đơn hàng thất bại");
+            }
+        }
+
+        private void btXoa_Click_1(object sender, EventArgs e)
+        {
+            Order dh = new Order();
+            //dh.OrderID = int.Parse(gVDH.CurrentRow.Cells["OrderID"].Value.ToString()); ;
+            dh.OrderID = int.Parse(txtMaDH.Text);
+            if(busDonHang.XoaDH(dh))
+            {
+                MessageBox.Show("Xóa đơn hàng thành công");
+                busDonHang.HienThiDSDonHang(gVDH);
+            }
+            else
+            {
+                MessageBox.Show("Xóa đơn hàng thất bại");
+            }
+           
+        }
+
+        private void btThoat_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+
+        private void gVDH_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+    } 
+    
 }

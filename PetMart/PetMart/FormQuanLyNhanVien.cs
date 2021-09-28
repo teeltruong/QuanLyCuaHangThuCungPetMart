@@ -124,5 +124,10 @@ namespace PetMart
         {
             Close();
         }
+
+        private void dGNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

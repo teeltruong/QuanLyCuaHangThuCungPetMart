@@ -23,11 +23,20 @@ namespace PetMart.BUS
             dgv.DataSource = dSanPham.LayDSSanPham();
         }
 
+       
+
+       
+
         public void LayDanhSachLoaiSP(ComboBox cb)
         {
             cb.DataSource = dSanPham.LayDSLoaiSP();
             cb.DisplayMember = "CategoryName";
             cb.ValueMember = "CategoryID";
+        }
+
+        public void Lay1SP(ComboBox cb, int ma)
+        {
+            dSanPham.NapCBDSSP(cb, ma);
         }
 
         public bool ThemSanPham(Product p)
@@ -82,6 +91,25 @@ namespace PetMart.BUS
             }
             else
                 return false;
+        }
+
+
+        //Lay danh sach san pham DAT HANG theo combobox
+        //Phan them vao
+        public void LayDSSP(ComboBox cb)
+        {
+            //dSanPham.NapCBDSSP(cb);
+            cb.DataSource = dSanPham.LayDSSanPham();
+            cb.DisplayMember = "ProductName";
+            cb.ValueMember = "ProductID";
+
+        }
+
+
+        public Product LayThongTinSP(int maSP)
+        {
+            //Kiem tra maSP, co thi moi lay
+            return dSanPham.LayThongTinSP(maSP);
         }
     }
 }

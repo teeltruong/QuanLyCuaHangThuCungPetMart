@@ -12,6 +12,8 @@ namespace PetMart
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Entity.Core.Objects;
+    using System.Linq;
     
     public partial class PetShopManagementEntities : DbContext
     {
@@ -31,5 +33,31 @@ namespace PetMart
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<OrderDetail> OrderDetails { get; set; }
         public virtual DbSet<Product> Products { get; set; }
+    
+        public virtual ObjectResult<Nullable<int>> sp_KiemTraSPDH(Nullable<int> maDH, Nullable<int> maSP)
+        {
+            var maDHParameter = maDH.HasValue ?
+                new ObjectParameter("MaDH", maDH) :
+                new ObjectParameter("MaDH", typeof(int));
+    
+            var maSPParameter = maSP.HasValue ?
+                new ObjectParameter("MaSP", maSP) :
+                new ObjectParameter("MaSP", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("sp_KiemTraSPDH", maDHParameter, maSPParameter);
+        }
+    
+        public virtual int sp_KiemTraSPDonHang(Nullable<int> maDH, Nullable<int> maSP)
+        {
+            var maDHParameter = maDH.HasValue ?
+                new ObjectParameter("MaDH", maDH) :
+                new ObjectParameter("MaDH", typeof(int));
+    
+            var maSPParameter = maSP.HasValue ?
+                new ObjectParameter("MaSP", maSP) :
+                new ObjectParameter("MaSP", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_KiemTraSPDonHang", maDHParameter, maSPParameter);
+        }
     }
 }
