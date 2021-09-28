@@ -347,6 +347,7 @@ namespace PetMart
             // 
             this.gVCTDH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gVCTDH.Location = new System.Drawing.Point(29, 44);
+            this.gVCTDH.ForeColor = System.Drawing.Color.Black;
             this.gVCTDH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gVCTDH.Name = "gVCTDH";
             this.gVCTDH.RowHeadersWidth = 62;

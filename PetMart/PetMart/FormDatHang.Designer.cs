@@ -391,6 +391,7 @@ namespace PetMart
             // 
             // dGSP
             // 
+            this.dGSP.ForeColor = System.Drawing.Color.Black;
             this.dGSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGSP.Location = new System.Drawing.Point(30, 26);
             this.dGSP.Name = "dGSP";
