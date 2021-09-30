@@ -32,19 +32,14 @@ namespace PetMart
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtUsername = new System.Windows.Forms.TextBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.txtPassword = new System.Windows.Forms.TextBox();
-            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.cbGioiTinh = new System.Windows.Forms.ComboBox();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -54,28 +49,33 @@ namespace PetMart
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.txtAddress = new System.Windows.Forms.TextBox();
-            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.txtLastName = new System.Windows.Forms.TextBox();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.panel6.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -85,77 +85,41 @@ namespace PetMart
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(472, 774);
+            this.panel1.Size = new System.Drawing.Size(427, 619);
             this.panel1.TabIndex = 0;
             // 
             // panelLogo
             // 
-            this.panelLogo.Controls.Add(this.label3);
             this.panelLogo.Controls.Add(this.label1);
+            this.panelLogo.Controls.Add(this.label3);
             this.panelLogo.Controls.Add(this.pictureBox2);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(472, 160);
+            this.panelLogo.Size = new System.Drawing.Size(427, 128);
             this.panelLogo.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.Snow;
-            this.label3.Location = new System.Drawing.Point(137, 92);
+            this.label3.Location = new System.Drawing.Point(128, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(296, 20);
+            this.label3.Size = new System.Drawing.Size(241, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "HỆ THỐNG CỬA HÀNG THÚ CƯNG";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.Color.Snow;
-            this.label1.Location = new System.Drawing.Point(134, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 36);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "PETMART";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = global::PetMart.Properties.Resources.LOGO_DOGKINGDOM_official__2;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(58, 41);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(76, 85);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::PetMart.Properties.Resources.illust6;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(14, 179);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(425, 488);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Font = new System.Drawing.Font("Montserrat ExtraBold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.label2.Location = new System.Drawing.Point(638, 29);
+            this.label2.Location = new System.Drawing.Point(574, 23);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 38);
+            this.label2.Size = new System.Drawing.Size(150, 37);
             this.label2.TabIndex = 1;
             this.label2.Text = "ĐĂNG KÝ";
             // 
@@ -164,55 +128,36 @@ namespace PetMart
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.txtUsername);
             this.panel2.Controls.Add(this.iconPictureBox1);
-            this.panel2.Location = new System.Drawing.Point(554, 468);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel2.Location = new System.Drawing.Point(492, 374);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(366, 80);
+            this.panel2.Size = new System.Drawing.Size(325, 64);
             this.panel2.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.panel3.Location = new System.Drawing.Point(30, 61);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel3.Location = new System.Drawing.Point(27, 49);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(310, 2);
+            this.panel3.Size = new System.Drawing.Size(276, 2);
             this.panel3.TabIndex = 3;
             // 
             // txtUsername
             // 
             this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
             this.txtUsername.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtUsername.Location = new System.Drawing.Point(74, 27);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtUsername.Location = new System.Drawing.Point(66, 22);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(265, 26);
+            this.txtUsername.Size = new System.Drawing.Size(236, 22);
             this.txtUsername.TabIndex = 1;
             this.txtUsername.Text = "User Name";
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
-            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
-            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 36;
-            this.iconPictureBox1.Location = new System.Drawing.Point(29, 16);
-            this.iconPictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(36, 40);
-            this.iconPictureBox1.TabIndex = 0;
-            this.iconPictureBox1.TabStop = false;
             // 
             // txtFirstName
             // 
             this.txtFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
             this.txtFirstName.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtFirstName.Location = new System.Drawing.Point(29, 27);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtFirstName.Location = new System.Drawing.Point(26, 22);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(154, 26);
+            this.txtFirstName.Size = new System.Drawing.Size(137, 22);
             this.txtFirstName.TabIndex = 7;
             this.txtFirstName.Text = "First Name";
             // 
@@ -221,57 +166,38 @@ namespace PetMart
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.txtPassword);
             this.panel4.Controls.Add(this.iconPictureBox2);
-            this.panel4.Location = new System.Drawing.Point(554, 556);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel4.Location = new System.Drawing.Point(492, 445);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(366, 86);
+            this.panel4.Size = new System.Drawing.Size(325, 69);
             this.panel4.TabIndex = 4;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.panel5.Location = new System.Drawing.Point(30, 61);
-            this.panel5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel5.Location = new System.Drawing.Point(27, 49);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(310, 2);
+            this.panel5.Size = new System.Drawing.Size(276, 2);
             this.panel5.TabIndex = 3;
             // 
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
             this.txtPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtPassword.Location = new System.Drawing.Point(74, 24);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPassword.Location = new System.Drawing.Point(66, 19);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(266, 26);
+            this.txtPassword.Size = new System.Drawing.Size(237, 22);
             this.txtPassword.TabIndex = 8;
             this.txtPassword.Text = "Password";
-            // 
-            // iconPictureBox2
-            // 
-            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
-            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Lock;
-            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 36;
-            this.iconPictureBox2.Location = new System.Drawing.Point(30, 19);
-            this.iconPictureBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(36, 40);
-            this.iconPictureBox2.TabIndex = 0;
-            this.iconPictureBox2.TabStop = false;
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.cbGioiTinh);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Controls.Add(this.txtPhone);
-            this.panel6.Location = new System.Drawing.Point(554, 186);
-            this.panel6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel6.Location = new System.Drawing.Point(492, 149);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(366, 86);
+            this.panel6.Size = new System.Drawing.Size(325, 69);
             this.panel6.TabIndex = 5;
             // 
             // cbGioiTinh
@@ -280,29 +206,28 @@ namespace PetMart
             this.cbGioiTinh.Items.AddRange(new object[] {
             "Nam",
             "Nu"});
-            this.cbGioiTinh.Location = new System.Drawing.Point(190, 30);
+            this.cbGioiTinh.Location = new System.Drawing.Point(169, 24);
+            this.cbGioiTinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbGioiTinh.Name = "cbGioiTinh";
-            this.cbGioiTinh.Size = new System.Drawing.Size(145, 28);
+            this.cbGioiTinh.Size = new System.Drawing.Size(129, 24);
             this.cbGioiTinh.TabIndex = 5;
             this.cbGioiTinh.Text = "Sex";
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.panel7.Location = new System.Drawing.Point(29, 64);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel7.Location = new System.Drawing.Point(26, 51);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(310, 2);
+            this.panel7.Size = new System.Drawing.Size(276, 2);
             this.panel7.TabIndex = 4;
             // 
             // txtPhone
             // 
             this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
             this.txtPhone.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtPhone.Location = new System.Drawing.Point(30, 30);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPhone.Location = new System.Drawing.Point(27, 24);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(153, 26);
+            this.txtPhone.Size = new System.Drawing.Size(136, 22);
             this.txtPhone.TabIndex = 3;
             this.txtPhone.Text = "Phone";
             // 
@@ -312,10 +237,9 @@ namespace PetMart
             this.btnDangky.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnDangky.FlatAppearance.BorderSize = 0;
             this.btnDangky.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnDangky.Location = new System.Drawing.Point(584, 642);
-            this.btnDangky.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDangky.Location = new System.Drawing.Point(519, 514);
             this.btnDangky.Name = "btnDangky";
-            this.btnDangky.Size = new System.Drawing.Size(310, 49);
+            this.btnDangky.Size = new System.Drawing.Size(276, 39);
             this.btnDangky.TabIndex = 6;
             this.btnDangky.Text = "TẠO TÀI KHOẢN";
             this.btnDangky.UseVisualStyleBackColor = false;
@@ -328,10 +252,9 @@ namespace PetMart
             this.btnDangNhap.FlatAppearance.BorderSize = 2;
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnDangNhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.btnDangNhap.Location = new System.Drawing.Point(584, 699);
-            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDangNhap.Location = new System.Drawing.Point(519, 559);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(310, 49);
+            this.btnDangNhap.Size = new System.Drawing.Size(276, 39);
             this.btnDangNhap.TabIndex = 7;
             this.btnDangNhap.Text = "ĐĂNG NHẬP";
             this.btnDangNhap.UseVisualStyleBackColor = false;
@@ -342,31 +265,108 @@ namespace PetMart
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Controls.Add(this.txtAddress);
             this.panel8.Controls.Add(this.iconPictureBox4);
-            this.panel8.Location = new System.Drawing.Point(554, 375);
-            this.panel8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel8.Location = new System.Drawing.Point(492, 300);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(366, 86);
+            this.panel8.Size = new System.Drawing.Size(325, 69);
             this.panel8.TabIndex = 8;
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.panel9.Location = new System.Drawing.Point(30, 61);
-            this.panel9.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel9.Location = new System.Drawing.Point(27, 49);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(310, 2);
+            this.panel9.Size = new System.Drawing.Size(276, 2);
             this.panel9.TabIndex = 3;
             // 
             // txtAddress
             // 
             this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
             this.txtAddress.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtAddress.Location = new System.Drawing.Point(74, 24);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtAddress.Location = new System.Drawing.Point(66, 19);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(261, 26);
+            this.txtAddress.Size = new System.Drawing.Size(232, 22);
             this.txtAddress.TabIndex = 6;
             this.txtAddress.Text = "Address";
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.dtpNgaySinh);
+            this.panel10.Controls.Add(this.panel11);
+            this.panel10.Controls.Add(this.iconPictureBox5);
+            this.panel10.Location = new System.Drawing.Point(492, 225);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(325, 69);
+            this.panel10.TabIndex = 9;
+            // 
+            // dtpNgaySinh
+            // 
+            this.dtpNgaySinh.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(66, 22);
+            this.dtpNgaySinh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(232, 22);
+            this.dtpNgaySinh.TabIndex = 4;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
+            this.panel11.Location = new System.Drawing.Point(27, 49);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(276, 2);
+            this.panel11.TabIndex = 3;
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.txtLastName);
+            this.panel12.Controls.Add(this.txtFirstName);
+            this.panel12.Controls.Add(this.panel13);
+            this.panel12.Location = new System.Drawing.Point(492, 74);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(325, 69);
+            this.panel12.TabIndex = 10;
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
+            this.txtLastName.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtLastName.Location = new System.Drawing.Point(168, 22);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(135, 22);
+            this.txtLastName.TabIndex = 2;
+            this.txtLastName.Text = "Last Name";
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
+            this.panel13.Location = new System.Drawing.Point(27, 49);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(276, 2);
+            this.panel13.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Sigmar One", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
+            this.label1.Location = new System.Drawing.Point(125, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(180, 46);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "PETMART";
+            // 
+            // iconPictureBox5
+            // 
+            this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
+            this.iconPictureBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
+            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Dog;
+            this.iconPictureBox5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
+            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox5.Location = new System.Drawing.Point(26, 13);
+            this.iconPictureBox5.Name = "iconPictureBox5";
+            this.iconPictureBox5.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox5.TabIndex = 0;
+            this.iconPictureBox5.TabStop = false;
             // 
             // iconPictureBox4
             // 
@@ -375,95 +375,65 @@ namespace PetMart
             this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.EnvelopeOpenText;
             this.iconPictureBox4.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
             this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.IconSize = 36;
-            this.iconPictureBox4.Location = new System.Drawing.Point(29, 16);
-            this.iconPictureBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.iconPictureBox4.Location = new System.Drawing.Point(26, 13);
             this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(36, 40);
+            this.iconPictureBox4.Size = new System.Drawing.Size(32, 32);
             this.iconPictureBox4.TabIndex = 0;
             this.iconPictureBox4.TabStop = false;
             // 
-            // panel10
+            // iconPictureBox2
             // 
-            this.panel10.Controls.Add(this.dtpNgaySinh);
-            this.panel10.Controls.Add(this.panel11);
-            this.panel10.Controls.Add(this.iconPictureBox5);
-            this.panel10.Location = new System.Drawing.Point(554, 281);
-            this.panel10.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(366, 86);
-            this.panel10.TabIndex = 9;
+            this.iconPictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Lock;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.Location = new System.Drawing.Point(27, 15);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox2.TabIndex = 0;
+            this.iconPictureBox2.TabStop = false;
             // 
-            // dtpNgaySinh
+            // iconPictureBox1
             // 
-            this.dtpNgaySinh.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgaySinh.Location = new System.Drawing.Point(74, 28);
-            this.dtpNgaySinh.Name = "dtpNgaySinh";
-            this.dtpNgaySinh.Size = new System.Drawing.Size(261, 26);
-            this.dtpNgaySinh.TabIndex = 4;
+            this.iconPictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
+            this.iconPictureBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
+            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.UserAlt;
+            this.iconPictureBox1.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
+            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox1.Location = new System.Drawing.Point(26, 13);
+            this.iconPictureBox1.Name = "iconPictureBox1";
+            this.iconPictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.iconPictureBox1.TabIndex = 0;
+            this.iconPictureBox1.TabStop = false;
             // 
-            // panel11
+            // pictureBox2
             // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.panel11.Location = new System.Drawing.Point(30, 61);
-            this.panel11.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(310, 2);
-            this.panel11.TabIndex = 3;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::PetMart.Properties.Resources.LOGO_DOGKINGDOM_official__2;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(41, 28);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(81, 73);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
-            // iconPictureBox5
+            // pictureBox1
             // 
-            this.iconPictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
-            this.iconPictureBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.EnvelopeOpenText;
-            this.iconPictureBox5.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.IconSize = 36;
-            this.iconPictureBox5.Location = new System.Drawing.Point(29, 16);
-            this.iconPictureBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(36, 40);
-            this.iconPictureBox5.TabIndex = 0;
-            this.iconPictureBox5.TabStop = false;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.txtLastName);
-            this.panel12.Controls.Add(this.txtFirstName);
-            this.panel12.Controls.Add(this.panel13);
-            this.panel12.Location = new System.Drawing.Point(554, 92);
-            this.panel12.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(366, 86);
-            this.panel12.TabIndex = 10;
-            // 
-            // txtLastName
-            // 
-            this.txtLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
-            this.txtLastName.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.txtLastName.Location = new System.Drawing.Point(189, 27);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(151, 26);
-            this.txtLastName.TabIndex = 2;
-            this.txtLastName.Text = "Last Name";
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.panel13.Location = new System.Drawing.Point(30, 61);
-            this.panel13.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(310, 2);
-            this.panel13.TabIndex = 3;
+            this.pictureBox1.BackgroundImage = global::PetMart.Properties.Resources.illust6;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 172);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(388, 406);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // FormDangKyAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
-            this.ClientSize = new System.Drawing.Size(972, 774);
+            this.ClientSize = new System.Drawing.Size(864, 619);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel6);
@@ -475,30 +445,29 @@ namespace PetMart
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FormDangKyAdmin";
             this.Text = "FormDangKyAdmin";
             this.panel1.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
             this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
-            this.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(true);
             this.PerformLayout();
 
         }
@@ -508,7 +477,6 @@ namespace PetMart
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
@@ -538,5 +506,6 @@ namespace PetMart
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.ComboBox cbGioiTinh;
         private System.Windows.Forms.DateTimePicker dtpNgaySinh;
+        private System.Windows.Forms.Label label1;
     }
 }

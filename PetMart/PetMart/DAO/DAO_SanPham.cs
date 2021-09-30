@@ -93,7 +93,8 @@ namespace PetMart.DAO
                 .Select(sp => new
                 {
                     sp.ProductName,
-                    sp.ProductID
+                    sp.ProductID,
+                    sp.OrderDetails
                 });
             return tenSP;
         }

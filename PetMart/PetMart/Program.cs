@@ -16,10 +16,11 @@ namespace PetMart
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new DangNhap());
             //Application.Run(new FormMainMenu());
             //Application.Run(new FormIndex());
-            //Application.Run(new FormDangNhapAdmin());
-            Application.Run(new FormDangKyAdmin());
+            Application.Run(new FormDangNhapAdmin());
+            //Application.Run(new FormDangKyAdmin());
 
         }
     }

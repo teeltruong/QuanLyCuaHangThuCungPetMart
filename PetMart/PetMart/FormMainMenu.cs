@@ -156,6 +156,14 @@ namespace PetMart
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-      
+        private void panelTitleBar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

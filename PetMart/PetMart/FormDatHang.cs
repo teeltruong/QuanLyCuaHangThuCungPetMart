@@ -42,7 +42,7 @@ namespace PetMart
             dGSP.Columns[0].Width = (int)(0.2 * dGSP.Width);
             dGSP.Columns[1].Width = (int)(0.2 * dGSP.Width);
             dGSP.Columns[2].Width = (int)(0.2 * dGSP.Width);
-            dGSP.Columns[3].Width = (int)(0.32 * dGSP.Width);
+            dGSP.Columns[3].Width = (int)(0.32* dGSP.Width);
         }
 
 
@@ -70,9 +70,10 @@ namespace PetMart
                 p = busSP.LayThongTinSP(maSP);
                 //Hien thi ra cac textbox
                 txtLoaiSP.Text = p.Category.CategoryName.ToString();
-                KichCo.Text = p.Size.ToString();
+                txtSize.Text = p.Size.ToString();
                 txtDonGia.Text = p.Price.ToString();
-                KichCo.Text = p.Size.ToString();
+                txtSize.Text = p.Size.ToString();
+               
                 
             }
                
@@ -185,6 +186,16 @@ namespace PetMart
             //Hien thi ma DH
             txtMaDH.Text = maDH.ToString();
             CapNhapGridView();
+        }
+
+        private void txtSize_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dGSP_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }

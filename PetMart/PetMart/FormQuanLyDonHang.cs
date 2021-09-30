@@ -26,7 +26,7 @@ namespace PetMart
             busDonHang.HienThiDSDonHang(gVDH);
             gVDH.Columns[0].Width = (int)(0.2 * gVDH.Width);
             gVDH.Columns[1].Width = (int)(0.2 * gVDH.Width);
-            gVDH.Columns[2].Width = (int)(0.2 * gVDH.Width);
+            gVDH.Columns[2].Width = (int)(0.25 * gVDH.Width);
             gVDH.Columns[3].Width = (int)(0.3 * gVDH.Width);
         }
 
@@ -51,7 +51,9 @@ namespace PetMart
                 cbNhanVien.Text = gVDH.Rows[e.RowIndex].Cells[3].Value.ToString();
 
 
+
             }
+           
         }
 
         private void btThem_Click(object sender, EventArgs e)
@@ -134,12 +136,14 @@ namespace PetMart
             this.Close();
         }
 
+        //private void gVDH_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        //{
+        //    foreach(DataGridView row in gVDH.Rows)
+        //    {
+        //        row.DefaultCellStyle.ForeColor = Color.Black;
 
-
-        private void gVDH_CellClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
+        //    }
+        //}
     } 
     
 }

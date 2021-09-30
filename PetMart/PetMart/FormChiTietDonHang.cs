@@ -30,7 +30,12 @@ namespace PetMart
         {
 
             bus.LayDSCTDH(gVCTDH, ma);
-           
+            gVCTDH.Columns[0].Width = (int)(0.2 * gVCTDH.Width);
+            gVCTDH.Columns[1].Width = (int)(0.2 * gVCTDH.Width);
+            gVCTDH.Columns[2].Width = (int)(0.2 * gVCTDH.Width);
+            gVCTDH.Columns[3].Width = (int)(0.2 * gVCTDH.Width);
+          
+            
 
         }
 
@@ -43,16 +48,7 @@ namespace PetMart
 
         }
 
-        private void LayDSCTDH(int ma)
-        {
-            gVCTDH.DataSource = null;
-            busDH.HienThiDSCTDonHang(gVCTDH, ma);
-            gVCTDH.Columns[0].Width = (int)(0.25 * gVCTDH.Width);
-            gVCTDH.Columns[1].Width = (int)(0.25 * gVCTDH.Width);
-            gVCTDH.Columns[2].Width = (int)(0.25 * gVCTDH.Width);
-            gVCTDH.Columns[3].Width = (int)(0.3 * gVCTDH.Width);
-        }
-
+  
 
         private void FormChiTietDonHang_Load(object sender, EventArgs e)
         {

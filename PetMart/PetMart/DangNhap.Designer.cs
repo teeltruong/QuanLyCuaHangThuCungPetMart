@@ -1,7 +1,7 @@
 ﻿
 namespace PetMart
 {
-    partial class FormDangNhapAdmin
+    partial class DangNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -161,7 +161,6 @@ namespace PetMart
             this.btnDangNhap.TabIndex = 6;
             this.btnDangNhap.Text = "ĐĂNG NHẬP";
             this.btnDangNhap.UseVisualStyleBackColor = false;
-            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // btnTaoTaiKhoan
             // 
@@ -176,7 +175,6 @@ namespace PetMart
             this.btnTaoTaiKhoan.TabIndex = 7;
             this.btnTaoTaiKhoan.Text = "TẠO TÀI KHOẢN";
             this.btnTaoTaiKhoan.UseVisualStyleBackColor = false;
-            this.btnTaoTaiKhoan.Click += new System.EventHandler(this.btnTaoTaiKhoan_Click);
             // 
             // label1
             // 
@@ -266,7 +264,6 @@ namespace PetMart
             this.Name = "FormDangNhapAdmin";
             this.Text = "FormDangNhapAdmin";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.FormDangNhapAdmin_Load);
             this.panel1.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
