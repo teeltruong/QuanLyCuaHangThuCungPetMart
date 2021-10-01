@@ -344,6 +344,7 @@ namespace PetMart
             // 
             // gVCTDH
             // 
+            this.gVCTDH.ForeColor = System.Drawing.Color.Black;
             this.gVCTDH.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.gVCTDH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gVCTDH.Location = new System.Drawing.Point(29, 44);

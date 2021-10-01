@@ -438,6 +438,7 @@ namespace PetMart
             this.dGNhanVien.Size = new System.Drawing.Size(984, 249);
             this.dGNhanVien.TabIndex = 12;
             this.dGNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGNhanVien_CellClick);
+            this.dGNhanVien.ForeColor = System.Drawing.Color.Black;
             this.dGNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGNhanVien_CellContentClick);
             // 
             // panel1

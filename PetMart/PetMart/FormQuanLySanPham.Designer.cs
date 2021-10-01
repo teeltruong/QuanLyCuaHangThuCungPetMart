@@ -392,6 +392,7 @@ namespace PetMart
             this.dGSP.RowTemplate.Height = 24;
             this.dGSP.Size = new System.Drawing.Size(955, 270);
             this.dGSP.TabIndex = 0;
+            this.dGSP.ForeColor = System.Drawing.Color.Black;
             this.dGSP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGSP_CellClick);
             // 
             // panel1

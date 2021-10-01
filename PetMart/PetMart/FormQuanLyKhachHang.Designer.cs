@@ -406,6 +406,8 @@ namespace PetMart
             // 
             // dGKhachHang
             // 
+            this.dGKhachHang.ForeColor = System.Drawing.Color.Black;
+
             this.dGKhachHang.BackgroundColor = System.Drawing.Color.White;
             this.dGKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGKhachHang.Location = new System.Drawing.Point(53, 48);
