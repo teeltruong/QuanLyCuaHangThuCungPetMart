@@ -26,7 +26,7 @@ namespace PetMart.DAO
                     s.OrderID,
                     s.CreatedDate,
                     s.Customer.FullName,
-                    s.Employee.LastName
+                   EmployeeName = s.Employee.LastName
                 }).ToList();
                 return ds;
             }
@@ -128,7 +128,7 @@ namespace PetMart.DAO
         public bool KiemTraSPDH(OrderDetail d)
         {
             int? sl;
-            sl = db.sp_KiemTraSPDH(d.OrderID, d.ProductID).FirstOrDefault();
+            sl = db.sp_KiemTraSPDonHang(d.OrderID, d.ProductID).FirstOrDefault();
             if (sl != 0)
                 return false;
             else
@@ -139,7 +139,7 @@ namespace PetMart.DAO
         public void ThemCTDH(OrderDetail d)
         {
             int? sl;
-            sl = db.sp_KiemTraSPDH(d.OrderID, d.ProductID).FirstOrDefault();
+            sl = db.sp_KiemTraSPDonHang(d.OrderID, d.ProductID).FirstOrDefault();
             db.OrderDetails.Add(d);
             db.SaveChanges();
         }
@@ -158,6 +158,24 @@ namespace PetMart.DAO
 
                 }).ToList();
             return ds;
+        }
+
+
+        public dynamic ReportDSDH()
+        {
+
+            var ds = db.OrderDetails.Select(s => new
+            {
+                s.OrderID,
+                CustomerName =s.Order.Customer.FullName,
+                s.Product.ProductName,
+                s.Order.CreatedDate,
+                s.Order.Customer.Phone,
+                s.Order.Customer.Address
+              
+            }).ToList();
+            return ds;
+
         }
     }
 }

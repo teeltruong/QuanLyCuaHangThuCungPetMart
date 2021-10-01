@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PetMart.BUS;
+using PetMart.Report;
 
 namespace PetMart
 {
@@ -28,9 +29,8 @@ namespace PetMart
             gVDH.Columns[1].Width = (int)(0.2 * gVDH.Width);
             gVDH.Columns[2].Width = (int)(0.25 * gVDH.Width);
             gVDH.Columns[3].Width = (int)(0.3 * gVDH.Width);
+           
         }
-
-
 
         private void FormQuanLyDonHang_Load(object sender, EventArgs e)
         {
@@ -58,19 +58,25 @@ namespace PetMart
 
         private void btThem_Click(object sender, EventArgs e)
         {
-            Order dh = new Order();
-            dh.CustomerID = cbKhachHang.SelectedIndex;
-            dh.CreatedDate = DateTime.Parse(dtpNgayDH.Value.ToString("yyyy/MM/dd"));
-            dh.EmployeeID = Int32.Parse(cbNhanVien.SelectedValue.ToString());
-            if (busDonHang.ThemDH(dh))
-            {
-                MessageBox.Show("Tạo đơn hàng thành công");
-                busDonHang.HienThiDSDonHang(gVDH);
-            }
-            else
-            {
-                MessageBox.Show("Tạo đơn hàng thất bại");
-            }
+            //Order dh = new Order();
+            //dh.CustomerID = cbKhachHang.SelectedIndex;
+            //dh.CreatedDate = DateTime.Parse(dtpNgayDH.Value.ToString("yyyy/MM/dd"));
+            //dh.EmployeeID = Int32.Parse(cbNhanVien.SelectedValue.ToString());
+            //if (busDonHang.ThemDH(dh))
+            //{
+            //    MessageBox.Show("Tạo đơn hàng thành công");
+            //    busDonHang.HienThiDSDonHang(gVDH);
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Tạo đơn hàng thất bại");
+            //}
+
+            cRDonDatHang r = new cRDonDatHang();
+            FormReport f = new FormReport();
+            r.SetDataSource(busDonHang.ReportHienThiDSDonHang());
+            f.crystalReportViewer1.ReportSource = r;
+            f.Show();
 
 
         }
@@ -134,6 +140,11 @@ namespace PetMart
         private void btThoat_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
 
         //private void gVDH_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)

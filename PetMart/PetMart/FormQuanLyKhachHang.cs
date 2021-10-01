@@ -26,9 +26,9 @@ namespace PetMart
         {
             dGKhachHang.DataSource = null;
             bKhachHang.HienThiDSKhachHang(dGKhachHang);
-            dGKhachHang.Columns[0].Width = (int)(dGKhachHang.Width * 0.125);
+            dGKhachHang.Columns[0].Width = (int)(dGKhachHang.Width * 0.2);
             dGKhachHang.Columns[1].Width = (int)(dGKhachHang.Width * 0.2);
-            dGKhachHang.Columns[2].Width = (int)(dGKhachHang.Width * 0.15);
+            dGKhachHang.Columns[2].Width = (int)(dGKhachHang.Width * 0.2);
             dGKhachHang.Columns[3].Width = (int)(dGKhachHang.Width * 0.125);
             dGKhachHang.Columns[4].Width = (int)(dGKhachHang.Width * 0.15);
             dGKhachHang.Columns[5].Width = (int)(dGKhachHang.Width * 0.25);
@@ -129,6 +129,11 @@ namespace PetMart
             r.SetDataSource(bKhachHang.LayDSKH().ToList());
             f.crystalReportViewer1.ReportSource = r;
             f.Show();
+        }
+
+        private void dGKhachHang_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

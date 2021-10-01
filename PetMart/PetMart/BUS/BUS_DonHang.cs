@@ -26,6 +26,11 @@ namespace PetMart.BUS
             dataGridView.DataSource = dDonHang.LayDSDH();
         }
 
+        public dynamic ReportHienThiDSDonHang()
+        {
+           return dDonHang.ReportDSDH();
+        }
+
         public void HienThiDSCTDonHang(DataGridView dg, int maDH)
         {
             dg.DataSource = dDonHang.DSCTDH(maDH);

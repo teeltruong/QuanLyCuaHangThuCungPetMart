@@ -30,9 +30,9 @@ namespace PetMart
         {
 
             bus.LayDSCTDH(gVCTDH, ma);
-            gVCTDH.Columns[0].Width = (int)(0.2 * gVCTDH.Width);
-            gVCTDH.Columns[1].Width = (int)(0.2 * gVCTDH.Width);
-            gVCTDH.Columns[2].Width = (int)(0.2 * gVCTDH.Width);
+            gVCTDH.Columns[0].Width = (int)(0.25 * gVCTDH.Width);
+            gVCTDH.Columns[1].Width = (int)(0.22 * gVCTDH.Width);
+            gVCTDH.Columns[2].Width = (int)(0.22 * gVCTDH.Width);
             gVCTDH.Columns[3].Width = (int)(0.2 * gVCTDH.Width);
           
             

@@ -16,5 +16,10 @@ namespace PetMart
         {
             InitializeComponent();
         }
+
+        private void DangNhap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

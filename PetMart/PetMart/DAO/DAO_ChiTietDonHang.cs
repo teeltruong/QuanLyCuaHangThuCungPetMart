@@ -46,7 +46,7 @@ namespace PetMart.DAO
                 try
                 {
                     int? sl;
-                    sl = db.sp_KiemTraSPDH(order.OrderID, order.ProductID).FirstOrDefault();
+                    sl = db.sp_KiemTraSPDonHang(order.OrderID, order.ProductID).FirstOrDefault();
                     if (sl != 0)
                         isThanhCong = false;
                     else

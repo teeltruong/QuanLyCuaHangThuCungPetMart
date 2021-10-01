@@ -25,10 +25,10 @@ namespace PetMart
         {
             dGNhanVien.DataSource = null;
             bNhanVien.HienThiDSNV(dGNhanVien);
-            dGNhanVien.Columns[0].Width = (int)(dGNhanVien.Width * 0.1);
-            dGNhanVien.Columns[1].Width = (int)(dGNhanVien.Width * 0.1);
-            dGNhanVien.Columns[2].Width = (int)(dGNhanVien.Width * 0.1);
-            dGNhanVien.Columns[3].Width = (int)(dGNhanVien.Width * 0.1);
+            dGNhanVien.Columns[0].Width = (int)(dGNhanVien.Width * 0.2);
+            dGNhanVien.Columns[1].Width = (int)(dGNhanVien.Width * 0.2);
+            dGNhanVien.Columns[2].Width = (int)(dGNhanVien.Width * 0.2);
+            dGNhanVien.Columns[3].Width = (int)(dGNhanVien.Width * 0.2);
             dGNhanVien.Columns[4].Width = (int)(dGNhanVien.Width * 0.18);
             dGNhanVien.Columns[5].Width = (int)(dGNhanVien.Width * 0.18);
             dGNhanVien.Columns[6].Width = (int)(dGNhanVien.Width * 0.24);

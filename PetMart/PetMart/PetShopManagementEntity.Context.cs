@@ -34,7 +34,7 @@ namespace PetMart
         public virtual DbSet<OrderDetail> OrderDetails { get; set; }
         public virtual DbSet<Product> Products { get; set; }
     
-        public virtual ObjectResult<Nullable<int>> sp_KiemTraSPDH(Nullable<int> maDH, Nullable<int> maSP)
+        public virtual ObjectResult<Nullable<int>> sp_KiemTraSPDonHang(Nullable<int> maDH, Nullable<int> maSP)
         {
             var maDHParameter = maDH.HasValue ?
                 new ObjectParameter("MaDH", maDH) :
@@ -44,20 +44,7 @@ namespace PetMart
                 new ObjectParameter("MaSP", maSP) :
                 new ObjectParameter("MaSP", typeof(int));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("sp_KiemTraSPDH", maDHParameter, maSPParameter);
-        }
-    
-        public virtual int sp_KiemTraSPDonHang(Nullable<int> maDH, Nullable<int> maSP)
-        {
-            var maDHParameter = maDH.HasValue ?
-                new ObjectParameter("MaDH", maDH) :
-                new ObjectParameter("MaDH", typeof(int));
-    
-            var maSPParameter = maSP.HasValue ?
-                new ObjectParameter("MaSP", maSP) :
-                new ObjectParameter("MaSP", typeof(int));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_KiemTraSPDonHang", maDHParameter, maSPParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("sp_KiemTraSPDonHang", maDHParameter, maSPParameter);
         }
     }
 }

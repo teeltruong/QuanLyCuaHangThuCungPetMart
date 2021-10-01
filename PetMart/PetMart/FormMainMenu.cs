@@ -24,7 +24,7 @@ namespace PetMart
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
-            leftBorderBtn.Size = new Size(10, 75);
+            leftBorderBtn.Size = new Size(10, 80);
             panelMenu.Controls.Add(leftBorderBtn);
             
             //Set giao dien form: cac nut X, mở lớn, ẩn

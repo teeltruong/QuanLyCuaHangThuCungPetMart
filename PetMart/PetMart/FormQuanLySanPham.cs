@@ -25,7 +25,7 @@ namespace PetMart
         {
             dGSP.DataSource = null;
             bSanPham.LayDanhSachSP(dGSP);
-            dGSP.Columns[0].Width = (int)(dGSP.Width * 0.1);
+            dGSP.Columns[0].Width = (int)(dGSP.Width * 0.2);
             dGSP.Columns[1].Width = (int)(dGSP.Width * 0.25);
             dGSP.Columns[2].Width = (int)(dGSP.Width * 0.2);
             dGSP.Columns[3].Width = (int)(dGSP.Width * 0.2);
