@@ -58,25 +58,20 @@ namespace PetMart
 
         private void btThem_Click(object sender, EventArgs e)
         {
-            //Order dh = new Order();
-            //dh.CustomerID = cbKhachHang.SelectedIndex;
-            //dh.CreatedDate = DateTime.Parse(dtpNgayDH.Value.ToString("yyyy/MM/dd"));
-            //dh.EmployeeID = Int32.Parse(cbNhanVien.SelectedValue.ToString());
-            //if (busDonHang.ThemDH(dh))
-            //{
-            //    MessageBox.Show("Tạo đơn hàng thành công");
-            //    busDonHang.HienThiDSDonHang(gVDH);
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Tạo đơn hàng thất bại");
-            //}
+            Order dh = new Order();
+            dh.CustomerID = cbKhachHang.SelectedIndex;
+            dh.CreatedDate = DateTime.Parse(dtpNgayDH.Value.ToString("yyyy/MM/dd"));
+            dh.EmployeeID = Int32.Parse(cbNhanVien.SelectedValue.ToString());
+            if (busDonHang.ThemDH(dh))
+            {
+                MessageBox.Show("Tạo đơn hàng thành công");
+                busDonHang.HienThiDSDonHang(gVDH);
+            }
+            else
+            {
+                MessageBox.Show("Tạo đơn hàng thất bại");
+            }
 
-            cRDonDatHang r = new cRDonDatHang();
-            FormReport f = new FormReport();
-            r.SetDataSource(busDonHang.ReportHienThiDSDonHang());
-            f.crystalReportViewer1.ReportSource = r;
-            f.Show();
 
 
         }
@@ -146,6 +141,18 @@ namespace PetMart
         {
 
         }
+
+        private void btn_report_Click(object sender, EventArgs e)
+        {
+
+            cRDonDatHang r = new cRDonDatHang();
+            FormReport f = new FormReport();
+            r.SetDataSource(busDonHang.ReportHienThiDSDonHang());
+            f.crystalReportViewer1.ReportSource = r;
+            f.Show();
+        }
+
+
 
         //private void gVDH_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         //{

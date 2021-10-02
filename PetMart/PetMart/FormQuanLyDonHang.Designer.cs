@@ -60,6 +60,7 @@ namespace PetMart
             this.gVDH = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.btnThemCTDH = new System.Windows.Forms.Button();
+            this.btn_report = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -330,14 +331,14 @@ namespace PetMart
             // btThem
             // 
             this.btThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
-            this.btThem.Font = new System.Drawing.Font("Montserrat", 7F, System.Drawing.FontStyle.Bold);
+            this.btThem.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold);
             this.btThem.ForeColor = System.Drawing.Color.White;
             this.btThem.Location = new System.Drawing.Point(34, 25);
             this.btThem.Margin = new System.Windows.Forms.Padding(4);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(100, 56);
             this.btThem.TabIndex = 0;
-            this.btThem.Text = "REPORT";
+            this.btThem.Text = "THÊM";
             this.btThem.UseVisualStyleBackColor = false;
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
@@ -387,14 +388,28 @@ namespace PetMart
             this.btnThemCTDH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
             this.btnThemCTDH.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThemCTDH.ForeColor = System.Drawing.Color.White;
-            this.btnThemCTDH.Location = new System.Drawing.Point(455, 336);
+            this.btnThemCTDH.Location = new System.Drawing.Point(338, 336);
             this.btnThemCTDH.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemCTDH.Name = "btnThemCTDH";
-            this.btnThemCTDH.Size = new System.Drawing.Size(226, 57);
+            this.btnThemCTDH.Size = new System.Drawing.Size(166, 57);
             this.btnThemCTDH.TabIndex = 4;
             this.btnThemCTDH.Text = "THÊM CTDH";
             this.btnThemCTDH.UseVisualStyleBackColor = false;
             this.btnThemCTDH.Click += new System.EventHandler(this.btnThemCTDH_Click_1);
+            // 
+            // btn_report
+            // 
+            this.btn_report.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(121)))), ((int)(((byte)(231)))));
+            this.btn_report.Font = new System.Drawing.Font("Montserrat", 8F, System.Drawing.FontStyle.Bold);
+            this.btn_report.ForeColor = System.Drawing.Color.White;
+            this.btn_report.Location = new System.Drawing.Point(512, 336);
+            this.btn_report.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_report.Name = "btn_report";
+            this.btn_report.Size = new System.Drawing.Size(133, 57);
+            this.btn_report.TabIndex = 4;
+            this.btn_report.Text = "REPORT";
+            this.btn_report.UseVisualStyleBackColor = false;
+            this.btn_report.Click += new System.EventHandler(this.btn_report_Click);
             // 
             // FormQuanLyDonHang
             // 
@@ -403,6 +418,7 @@ namespace PetMart
             this.BackColor = System.Drawing.Color.PaleVioletRed;
             this.ClientSize = new System.Drawing.Size(1319, 903);
             this.Controls.Add(this.btnThemCTDH);
+            this.Controls.Add(this.btn_report);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -457,5 +473,6 @@ namespace PetMart
         private System.Windows.Forms.ComboBox cbKhachHang;
         private System.Windows.Forms.ComboBox cbNhanVien;
         private System.Windows.Forms.Button btnThemCTDH;
+        private System.Windows.Forms.Button btn_report;
     }
 }

@@ -308,7 +308,7 @@ namespace PetMart
             this.btThoat.Name = "btThoat";
             this.btThoat.Size = new System.Drawing.Size(121, 55);
             this.btThoat.TabIndex = 3;
-            this.btThoat.Text = "Thoát";
+            this.btThoat.Text = "THOÁT";
             this.btThoat.UseVisualStyleBackColor = false;
             this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
@@ -322,7 +322,7 @@ namespace PetMart
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(255, 53);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Report";
+            this.button1.Text = "REPORT";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -336,7 +336,7 @@ namespace PetMart
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(121, 55);
             this.btSua.TabIndex = 2;
-            this.btSua.Text = "Sửa";
+            this.btSua.Text = "SỬA";
             this.btSua.UseVisualStyleBackColor = false;
             this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
@@ -350,7 +350,7 @@ namespace PetMart
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(121, 55);
             this.btXoa.TabIndex = 1;
-            this.btXoa.Text = "Xóa";
+            this.btXoa.Text = "XÓA";
             this.btXoa.UseVisualStyleBackColor = false;
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
@@ -364,7 +364,7 @@ namespace PetMart
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(121, 55);
             this.btThem.TabIndex = 0;
-            this.btThem.Text = "Thêm";
+            this.btThem.Text = "THÊM";
             this.btThem.UseVisualStyleBackColor = false;
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
@@ -392,7 +392,6 @@ namespace PetMart
             this.dGSP.RowTemplate.Height = 24;
             this.dGSP.Size = new System.Drawing.Size(955, 270);
             this.dGSP.TabIndex = 0;
-            this.dGSP.ForeColor = System.Drawing.Color.Black;
             this.dGSP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dGSP_CellClick);
             // 
             // panel1

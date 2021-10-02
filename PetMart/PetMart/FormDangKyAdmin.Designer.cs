@@ -458,6 +458,7 @@ namespace PetMart
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1034, 702);
             this.Name = "FormDangKyAdmin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDangKyAdmin";
             this.panel1.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
