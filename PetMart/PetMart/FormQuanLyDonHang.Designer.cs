@@ -173,6 +173,7 @@ namespace PetMart
             this.dtpNgayDH.Name = "dtpNgayDH";
             this.dtpNgayDH.Size = new System.Drawing.Size(302, 28);
             this.dtpNgayDH.TabIndex = 13;
+            this.dtpNgayDH.ValueChanged += new System.EventHandler(this.dtpNgayDH_ValueChanged);
             // 
             // txtMaDH
             // 

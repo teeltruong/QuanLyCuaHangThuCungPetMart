@@ -78,12 +78,6 @@
     <Compile Include="Customer.cs">
       <DependentUpon>PetShopManagementEntity.tt</DependentUpon>
     </Compile>
-    <Compile Include="DangNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DangNhap.Designer.cs">
-      <DependentUpon>DangNhap.cs</DependentUpon>
-    </Compile>
     <Compile Include="DAO\DAO_ChiTietDonHang.cs" />
     <Compile Include="DAO\DAO_DatHang.cs" />
     <Compile Include="DAO\DAO_DonHang.cs" />
@@ -211,9 +205,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dtsDonHang.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DangNhap.resx">
-      <DependentUpon>DangNhap.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormChiTietDonHang.resx">
       <DependentUpon>FormChiTietDonHang.cs</DependentUpon>
     </EmbeddedResource>

@@ -24,7 +24,7 @@ namespace PetMart.DAO
                 var ds = db.OrderDetails.Where(s => s.OrderID == maDH).Select(s => new
                 {
                     s.OrderID,
-                    s.ProductID,
+                    s.Product.ProductName,
                     s.UnitPrice,
                     s.Quantity
                 }).ToList();

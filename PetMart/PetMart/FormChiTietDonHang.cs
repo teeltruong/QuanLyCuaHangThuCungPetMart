@@ -66,9 +66,9 @@ namespace PetMart
             if (e.RowIndex >= 0 && e.RowIndex < gVCTDH.Rows.Count)
             {
                 txtMaDH.Text = gVCTDH.Rows[e.RowIndex].Cells["OrderID"].Value.ToString();
-                txtMaSP.Text = gVCTDH.Rows[e.RowIndex].Cells["ProductID"].Value.ToString();
-                txtDonGia.Text = gVCTDH.Rows[e.RowIndex].Cells["UnitPrice"].Value.ToString();
-                txtSoLuong.Text = gVCTDH.Rows[e.RowIndex].Cells["Quantity"].Value.ToString();
+                txtMaSP.Text = gVCTDH.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtDonGia.Text = gVCTDH.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtSoLuong.Text = gVCTDH.Rows[e.RowIndex].Cells[3].Value.ToString();
                 //busSP.Lay1SP(cbTenSP, int.Parse(txtMaSP.Text));
 
             }

@@ -152,6 +152,11 @@ namespace PetMart
             f.Show();
         }
 
+        private void dtpNgayDH_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
 
         //private void gVDH_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)

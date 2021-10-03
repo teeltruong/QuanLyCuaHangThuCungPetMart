@@ -27,19 +27,28 @@ namespace PetMart
         
             string userName = txbUserName.Text;
             string passWord = txbPassWord.Text;
-            if (bNhanVien.ktlogin(userName, passWord) == true)
+            if(txbUserName.Text == null || txbPassWord.Text == null)
             {
-                MessageBox.Show("Đăng nhập thành công!!");
-                FormMainMenu f = new FormMainMenu();
-                this.Hide();
-                f.ShowDialog();
+                MessageBox.Show("Không được để trống!");
+
             }
             else
             {
-                MessageBox.Show("Đăng nhập thất bại!!");
-                txbUserName.Clear();
-                txbPassWord.Clear();
+                if (bNhanVien.ktlogin(userName, passWord) == true)
+                {
+                    MessageBox.Show("Đăng nhập thành công!!");
+                    FormMainMenu f = new FormMainMenu();
+                    this.Hide();
+                    f.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Đăng nhập thất bại!!");
+                    txbUserName.Clear();
+                    txbPassWord.Clear();
+                }
             }
+            
         }
 
 
@@ -64,14 +73,16 @@ namespace PetMart
 
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void txbUserName_Click(object sender, EventArgs e)
         {
-
+            txbUserName.Clear();
+            txbUserName.ForeColor = Color.Black;
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void txbPassWord_Click(object sender, EventArgs e)
         {
-
+            txbPassWord.Clear();
+            txbPassWord.ForeColor = Color.Black;
         }
     }
 }

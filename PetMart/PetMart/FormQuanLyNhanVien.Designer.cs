@@ -429,6 +429,7 @@ namespace PetMart
             // 
             // dGNhanVien
             // 
+            this.dGNhanVien.ForeColor = System.Drawing.Color.Black;
             this.dGNhanVien.BackgroundColor = System.Drawing.Color.White;
             this.dGNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGNhanVien.Location = new System.Drawing.Point(48, 48);

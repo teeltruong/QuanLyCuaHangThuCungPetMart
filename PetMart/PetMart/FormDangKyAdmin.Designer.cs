@@ -179,11 +179,14 @@ namespace PetMart
             this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
             this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtUsername.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtUsername.HideSelection = false;
             this.txtUsername.Location = new System.Drawing.Point(66, 20);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(267, 27);
             this.txtUsername.TabIndex = 1;
+            this.txtUsername.TabStop = false;
             this.txtUsername.Text = "User Name";
+            this.txtUsername.Click += new System.EventHandler(this.txtUsername_Click);
             // 
             // iconPictureBox1
             // 
@@ -203,11 +206,15 @@ namespace PetMart
             this.txtFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
             this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtFirstName.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtFirstName.HideSelection = false;
             this.txtFirstName.Location = new System.Drawing.Point(20, 18);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(177, 27);
             this.txtFirstName.TabIndex = 7;
+            this.txtFirstName.TabStop = false;
             this.txtFirstName.Text = "First Name";
+            this.txtFirstName.Click += new System.EventHandler(this.txtFirstName_Click);
+            this.txtFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFirstName_KeyPress);
             // 
             // panel4
             // 
@@ -232,12 +239,15 @@ namespace PetMart
             this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtPassword.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtPassword.HideSelection = false;
             this.txtPassword.Location = new System.Drawing.Point(66, 17);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(268, 27);
             this.txtPassword.TabIndex = 8;
+            this.txtPassword.TabStop = false;
             this.txtPassword.Text = "Password";
+            this.txtPassword.Click += new System.EventHandler(this.txtPassword_Click);
             // 
             // iconPictureBox2
             // 
@@ -289,11 +299,15 @@ namespace PetMart
             this.txtPhone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
             this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtPhone.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtPhone.HideSelection = false;
             this.txtPhone.Location = new System.Drawing.Point(20, 21);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(177, 27);
             this.txtPhone.TabIndex = 3;
+            this.txtPhone.TabStop = false;
             this.txtPhone.Text = "Phone";
+            this.txtPhone.Click += new System.EventHandler(this.txtPhone_Click);
+            this.txtPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhone_KeyPress);
             // 
             // btnDangky
             // 
@@ -347,11 +361,14 @@ namespace PetMart
             this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
             this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtAddress.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtAddress.HideSelection = false;
             this.txtAddress.Location = new System.Drawing.Point(63, 17);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(266, 27);
             this.txtAddress.TabIndex = 6;
+            this.txtAddress.TabStop = false;
             this.txtAddress.Text = "Address";
+            this.txtAddress.Click += new System.EventHandler(this.txtAddress_Click);
             // 
             // iconPictureBox4
             // 
@@ -423,11 +440,15 @@ namespace PetMart
             this.txtLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(245)))), ((int)(((byte)(253)))));
             this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtLastName.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.txtLastName.HideSelection = false;
             this.txtLastName.Location = new System.Drawing.Point(203, 18);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(129, 27);
             this.txtLastName.TabIndex = 2;
+            this.txtLastName.TabStop = false;
             this.txtLastName.Text = "Last Name";
+            this.txtLastName.Click += new System.EventHandler(this.txtLastName_Click);
+            this.txtLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLastName_KeyPress);
             // 
             // panel13
             // 
@@ -460,6 +481,7 @@ namespace PetMart
             this.Name = "FormDangKyAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormDangKyAdmin";
+            this.Load += new System.EventHandler(this.FormDangKyAdmin_Load);
             this.panel1.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();

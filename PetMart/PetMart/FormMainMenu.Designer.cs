@@ -208,10 +208,10 @@ namespace PetMart
             this.iconCurrentChildForm.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconCurrentChildForm.IconColor = System.Drawing.Color.White;
             this.iconCurrentChildForm.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconCurrentChildForm.IconSize = 36;
-            this.iconCurrentChildForm.Location = new System.Drawing.Point(22, 26);
+            this.iconCurrentChildForm.IconSize = 40;
+            this.iconCurrentChildForm.Location = new System.Drawing.Point(22, 25);
             this.iconCurrentChildForm.Name = "iconCurrentChildForm";
-            this.iconCurrentChildForm.Size = new System.Drawing.Size(36, 36);
+            this.iconCurrentChildForm.Size = new System.Drawing.Size(40, 40);
             this.iconCurrentChildForm.TabIndex = 1;
             this.iconCurrentChildForm.TabStop = false;
             // 
@@ -286,6 +286,7 @@ namespace PetMart
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1714, 1028);
             this.Name = "FormMainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMainMenu";
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
