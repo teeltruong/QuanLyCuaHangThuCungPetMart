@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b15f4ef1504c4eb5a391467ff743292f" Name="Diagram1">
+        <EntityTypeShape EntityType="PetShopManagementModel.Category" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopManagementModel.Customer" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopManagementModel.Employee" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopManagementModel.Order" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopManagementModel.OrderDetail" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="PetShopManagementModel.Product" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <AssociationConnector Association="PetShopManagementModel.fk_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="PetShopManagementModel.fk_Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="PetShopManagementModel.fk_Order_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="PetShopManagementModel.fk_OrderDetail_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="PetShopManagementModel.fk_OrderDetail_Product" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
